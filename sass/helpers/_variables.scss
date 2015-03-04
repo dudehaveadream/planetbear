@@ -9,6 +9,7 @@ $bold: 600;
 
 $black: #000000;
 $white: #ffffff;
+$red: #ff0101;
 $green-darken: #23c358;
 $green-lighter: #00ff66;
 
@@ -23,3 +24,10 @@ $head-background-attachment: none; /* none, fixed, scroll*/
 .travel-head {
     @include background-size (cover);
 }
+
+/* Waitfor */
+$waitfor-display: block; /* block, none */
+$waitfor-background-color: $white;
+$waitfor-background-image: url();
+$waitfor-background-position: center;
+$waitfor-background-attachment: none; /* none, fixed, scroll*/
