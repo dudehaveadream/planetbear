@@ -4,6 +4,7 @@
          -o-box-sizing: border-box;
         -ms-box-sizing: border-box;
             box-sizing: border-box;
+    background-repeat: no-repeat;
 }
 body {
     font-family: $main-font;
@@ -16,10 +17,16 @@ h1,h2,h3,h4,h5 {
 h1 {
     font-size: 33px;
     color: $black;
-    letter-spacing: 3px;
 }
 h5 {
     font-size: 18px;
+}
+a {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+        color: $green-lighter;
+    }
 }
 .section {
     min-width: $container-width;
@@ -39,4 +46,39 @@ h5 {
     text-decoration: none;
     letter-spacing: 1px;
     color: $white;
+}
+
+.btn-transparent {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: $light;
+    color: $green-lighter;
+    text-transform: uppercase;
+    border: 3px solid $green-lighter;
+    padding: 5px;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    @include transition (all, 0.4s, linear);
+    &:hover {
+        @include box-shadow (0 0 3px 1px rgba(255,255,255,.7));
+        text-shadow: 1px 1px 3px rgba(255,255,255,.7);
+    }
+}
+
+.btn-green {
+    display: inline-block;
+    background: $green-lighter;
+    font-size: 16px;
+    font-weight: $bold;
+    color: #006b2b;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 35px;
+    border-bottom: 5px solid #1c7965;
+    letter-spacing: 1px;
+    @include transition (all, 0.4s, linear);
+    &:hover {
+        color: #006b2b;
+        @include box-shadow (inset 0 0 13px 3px $white);
+    }
 }

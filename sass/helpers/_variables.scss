@@ -1,7 +1,6 @@
 $container-width: 960px;
 
 $main-font: 'Ubuntu', sans-serif;
-$main-font-size: 16px;
 
 $light: 300;
 $regular: 400;
@@ -13,5 +12,14 @@ $white: #ffffff;
 $green-darken: #23c358;
 $green-lighter: #00ff66;
 
+/* TRAVEL SECTIONS */
 
-
+/* Video */
+$head-display: block; /* block, none */
+$head-background-color: none;
+$head-background-image: url(../img/bg/head_bg.jpg);
+$head-background-position: center;
+$head-background-attachment: none; /* none, fixed, scroll*/
+.travel-head {
+    @include background-size (cover);
+}

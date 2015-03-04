@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>planetbeat</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+
+    <!-- Styles -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/wow.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            wow = new WOW(
+              {
+                animateClass: 'animated',
+                offset: 100,
+                callback: function(box) {
+                  console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                }
+              }
+            );
+            wow.init();
+
+            var wHeight = $(window).height();
+            $('.travel-head').height(wHeight);
+            $(window).resize(function(){
+                var wHeight = $(window).height();
+                $('.travel-head').height(wHeight);
+            });
+
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 1){
+                    $('.header').addClass("sticky");
+                }
+                else{
+                    $('.header').removeClass("sticky");
+                }
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+<div class="section header">
+    <div class="container">
+        <a href="#" class="header-logo"><img src="img/logo_green.png" alt=""></a>
+        <div class="header-inner">
+            <ul class="header-nav">
+                <li class="active"><a href="#">ПУТЕШЕСТВИЯ</a></li>
+                <li><a href="#">агентствам</a></li>
+                <li><a href="#">группам</a></li>
+                <li><a href="#">почему у нас нет офиса?</a></li>
+                <li><a href="#">БЛОГ</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="header-visible">
+                <ul class="page-nav">
+                    <li><a href="#">О путешествии</a></li>
+                    <li><a href="#">Карта</a></li>
+                    <li><a href="#">Детали</a></li>
+                    <li><a href="#">Программа</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Вопросы</a></li>
+                </ul>
+                <div class="header-callback">
+                    <div class="phone">
+                        <h5>+7 (926) 521 07 79</h5>
+                        <a href="#">Вам перезвонить?</a>
+                    </div>
+                    <a href="#" class="btn-transparent">узнать<br>подробности</a>
+                    <a href="#" class="btn-green">оставить<br>заявку</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div><!-- Header end -->
+
+<div class="section travel-head">
+    <div class="container">
+        <div class="travel-head-centred">
+            <div class="travel-head-centred-inner">
+                <h1>путешествие<br>по сердцу бали</h1>
+                <p>Проплывите на парусной яхте по островам Индонезии и познайте душу острова Бали в авторском путешествии</p>
+                <a href="#" class="btn-green">оставить<br>заявку</a>
+            </div>
+        </div>
+        <div class="travel-head-scrollit">
+            <img src="img/icons/mouse.png" alt="">
+            <p>Скролльте вниз чтобы узнать больше</p>
+        </div>
+    </div>
+</div><!-- Travel head end -->
+
+
+<div class="section footer">
+    <div class="container">
+        <div class="footer-top">
+            <a href="#" class="footer-logo"><img src="img/logo_green.png" alt=""></a>
+            <ul class="footer-nav">
+                <li><a href="#">ПУТЕШЕСТВИЯ</a></li>
+                <li><a href="#">почему у нас нет офиса?</a></li>
+                <li><a href="#">БЛОГ</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright"><span>&copy; PLANETBEAT</span> почувствуйте душу планеты</p>
+            <p>Ответственность по туру застрахована на 30 000 000 р.</p>
+            <p>Наш номер в федеральном реестре туроператоров МТ3 010295.</p>
+        </div>
+    </div>
+</div><!-- Footer end -->
+
+</body>
+</html>

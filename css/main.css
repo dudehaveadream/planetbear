@@ -4,6 +4,18 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* Sass utilities */
 /*Mixins*/
+/* TRAVEL SECTIONS */
+/* Video */
+/* block, none */
+/* none, fixed, scroll*/
+/* line 23, ../sass/helpers/_variables.scss */
+.travel-head {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+
 /* Base stuff */
 /* Reset */
 /* line 5, C:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
@@ -78,25 +90,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+  background-repeat: no-repeat;
 }
 
-/* line 8, ../sass/base/_base.scss */
+/* line 9, ../sass/base/_base.scss */
 body {
   font-family: "Ubuntu", sans-serif;
 }
 
-/* line 11, ../sass/base/_base.scss */
+/* line 12, ../sass/base/_base.scss */
 h1, h2, h3, h4, h5 {
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
 }
 
-/* line 16, ../sass/base/_base.scss */
+/* line 17, ../sass/base/_base.scss */
 h1 {
   font-size: 33px;
   color: #000000;
-  letter-spacing: 3px;
 }
 
 /* line 21, ../sass/base/_base.scss */
@@ -105,17 +117,27 @@ h5 {
 }
 
 /* line 24, ../sass/base/_base.scss */
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* line 27, ../sass/base/_base.scss */
+a:hover {
+  color: #00ff66;
+}
+
+/* line 31, ../sass/base/_base.scss */
 .section {
   min-width: 960px;
 }
 
-/* line 27, ../sass/base/_base.scss */
+/* line 34, ../sass/base/_base.scss */
 .container {
   width: 960px;
   margin: auto;
 }
 
-/* line 32, ../sass/base/_base.scss */
+/* line 39, ../sass/base/_base.scss */
 .btn-more {
   display: inline-block;
   border: 3px solid #ffffff;
@@ -128,7 +150,304 @@ h5 {
   color: #ffffff;
 }
 
+/* line 51, ../sass/base/_base.scss */
+.btn-transparent {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 300;
+  color: #00ff66;
+  text-transform: uppercase;
+  border: 3px solid #00ff66;
+  padding: 5px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+/* line 62, ../sass/base/_base.scss */
+.btn-transparent:hover {
+  -webkit-box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.7);
+  -moz-box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.7);
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
+}
+
+/* line 68, ../sass/base/_base.scss */
+.btn-green {
+  display: inline-block;
+  background: #00ff66;
+  font-size: 16px;
+  font-weight: 600;
+  color: #006b2b;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 35px;
+  border-bottom: 5px solid #1c7965;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+/* line 80, ../sass/base/_base.scss */
+.btn-green:hover {
+  color: #006b2b;
+  -webkit-box-shadow: inset 0 0 13px 3px #ffffff;
+  -moz-box-shadow: inset 0 0 13px 3px #ffffff;
+  box-shadow: inset 0 0 13px 3px #ffffff;
+}
+
 /* Layout related stylesheets* */
+/* line 1, ../sass/layout/_header.scss */
+.header {
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  z-index: 100;
+}
+/* line 3, ../sass/helpers/_mixins.scss */
+.header .container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 10, ../sass/layout/_header.scss */
+.header-logo {
+  float: left;
+  width: 100px;
+  text-align: center;
+}
+/* line 14, ../sass/layout/_header.scss */
+.header-logo img {
+  height: 83px;
+  width: 83px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+/* line 20, ../sass/layout/_header.scss */
+.header-inner {
+  float: right;
+  width: 806px;
+}
+/* line 24, ../sass/layout/_header.scss */
+.header-nav {
+  height: 16px;
+  visibility: visible;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+/* line 28, ../sass/layout/_header.scss */
+.header-nav li {
+  display: inline-block;
+  margin-left: 35px;
+}
+/* line 31, ../sass/layout/_header.scss */
+.header-nav li a {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+/* line 38, ../sass/layout/_header.scss */
+.header-nav li:first-child {
+  margin-left: 0;
+}
+/* line 42, ../sass/layout/_header.scss */
+.header-nav li.active a {
+  color: #00ff66;
+}
+/* line 48, ../sass/layout/_header.scss */
+.header-visible {
+  width: 100%;
+  padding-top: 20px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+/* line 3, ../sass/helpers/_mixins.scss */
+.header-visible:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 53, ../sass/layout/_header.scss */
+.header-visible .page-nav {
+  float: left;
+  width: 400px;
+  padding-top: 2px;
+}
+/* line 57, ../sass/layout/_header.scss */
+.header-visible .page-nav li {
+  width: 115px;
+  float: left;
+  margin: 2px 0;
+}
+/* line 61, ../sass/layout/_header.scss */
+.header-visible .page-nav li:nth-child(3n+1) {
+  margin-right: 40px;
+}
+/* line 64, ../sass/layout/_header.scss */
+.header-visible .page-nav li a {
+  font-size: 15px;
+  font-weight: 300;
+}
+/* line 71, ../sass/layout/_header.scss */
+.header-callback {
+  float: right;
+}
+/* line 73, ../sass/layout/_header.scss */
+.header-callback .phone {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+}
+/* line 77, ../sass/layout/_header.scss */
+.header-callback .phone h5 {
+  font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+/* line 82, ../sass/layout/_header.scss */
+.header-callback .phone a {
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+/* line 90, ../sass/layout/_header.scss */
+.header-callback .phone a:hover {
+  border-color: #ffffff;
+}
+/* line 95, ../sass/layout/_header.scss */
+.header-callback .btn-green {
+  border-bottom: none;
+  font-size: 13px;
+  vertical-align: middle;
+  padding: 7px 20px;
+  line-height: 1.3;
+  margin-left: 5px;
+}
+/* line 103, ../sass/layout/_header.scss */
+.header-callback .btn-transparent {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+/* line 110, ../sass/layout/_header.scss */
+.header.sticky .header-logo {
+  margin-top: 3px;
+}
+/* line 112, ../sass/layout/_header.scss */
+.header.sticky .header-logo img {
+  width: 40px;
+  height: 40px;
+}
+/* line 117, ../sass/layout/_header.scss */
+.header.sticky .header-nav {
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+/* line 122, ../sass/layout/_header.scss */
+.header.sticky .header-visible {
+  padding-top: 0;
+}
+
+/* line 1, ../sass/layout/_footer.scss */
+.footer {
+  padding: 10px 0;
+  background: #000000;
+}
+/* line 3, ../sass/helpers/_mixins.scss */
+.footer-top:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 6, ../sass/layout/_footer.scss */
+.footer-top .footer-logo {
+  float: left;
+}
+/* line 8, ../sass/layout/_footer.scss */
+.footer-top .footer-logo img {
+  height: 71px;
+  width: 71px;
+}
+/* line 13, ../sass/layout/_footer.scss */
+.footer-top .footer-nav {
+  float: right;
+  padding: 15px 0 15px 10px;
+  border-bottom: 1px solid #1b1b1b;
+}
+/* line 17, ../sass/layout/_footer.scss */
+.footer-top .footer-nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+/* line 20, ../sass/layout/_footer.scss */
+.footer-top .footer-nav li a {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+/* line 30, ../sass/layout/_footer.scss */
+.footer-bottom {
+  padding-top: 15px;
+}
+/* line 32, ../sass/layout/_footer.scss */
+.footer-bottom p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #7a7a7a;
+  line-height: 1.2;
+}
+/* line 38, ../sass/layout/_footer.scss */
+.footer-bottom p.copyright {
+  float: right;
+  color: #4b4b4b;
+  position: relative;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+/* line 44, ../sass/layout/_footer.scss */
+.footer-bottom p.copyright span {
+  font-weight: 600;
+  position: absolute;
+  top: -17px;
+  left: -50px;
+}
+
 /* Pages */
 /* line 1, ../sass/pages/_index.scss */
 .main-travel {
@@ -164,7 +483,7 @@ h5 {
   width: 295px;
   float: left;
   margin-right: 27px;
-  margin-bottom: 30px;
+  margin-top: 30px;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
@@ -180,24 +499,25 @@ h5 {
   padding: 15px;
   background: #ffffff;
   text-align: center;
+  min-height: 217px;
 }
-/* line 31, ../sass/pages/_index.scss */
+/* line 32, ../sass/pages/_index.scss */
 .main-travel .travels-item-info h5 {
   padding: 0 10px;
   margin-bottom: 20px;
   letter-spacing: 1px;
 }
-/* line 35, ../sass/pages/_index.scss */
+/* line 36, ../sass/pages/_index.scss */
 .main-travel .travels-item-info h5 span {
   color: #23c358;
 }
-/* line 39, ../sass/pages/_index.scss */
+/* line 40, ../sass/pages/_index.scss */
 .main-travel .travels-item-info p.descrip {
   font-size: 14px;
   color: #5b5a5a;
   margin-bottom: 20px;
 }
-/* line 44, ../sass/pages/_index.scss */
+/* line 45, ../sass/pages/_index.scss */
 .main-travel .travels-item-info p.days {
   font-size: 14px;
   font-weight: 300;
@@ -205,13 +525,13 @@ h5 {
   color: #919191;
   margin-bottom: 20px;
 }
-/* line 51, ../sass/pages/_index.scss */
+/* line 52, ../sass/pages/_index.scss */
 .main-travel .travels-item-info p.summ {
   font-size: 19px;
   font-weight: 300;
   color: #919191;
 }
-/* line 55, ../sass/pages/_index.scss */
+/* line 56, ../sass/pages/_index.scss */
 .main-travel .travels-item-info p.summ span {
   font-size: 31px;
   font-weight: 600;
@@ -219,27 +539,33 @@ h5 {
   margin-left: 10px;
   margin-right: 5px;
 }
-/* line 64, ../sass/pages/_index.scss */
+/* line 65, ../sass/pages/_index.scss */
 .main-travel .travels-item .img-holder {
   width: 295px;
   height: 224px;
   display: block;
   position: relative;
 }
-/* line 69, ../sass/pages/_index.scss */
+/* line 70, ../sass/pages/_index.scss */
 .main-travel .travels-item .img-holder img {
   width: 100%;
   height: 100%;
 }
-/* line 73, ../sass/pages/_index.scss */
+/* line 74, ../sass/pages/_index.scss */
 .main-travel .travels-item .img-holder .btn-holder {
   position: absolute;
   top: 80px;
   left: 0;
   width: 100%;
   text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
-/* line 80, ../sass/pages/_index.scss */
+/* line 83, ../sass/pages/_index.scss */
 .main-travel .travels-item .img-holder .location {
   position: absolute;
   bottom: 10px;
@@ -247,7 +573,7 @@ h5 {
   width: 100%;
   text-align: center;
 }
-/* line 86, ../sass/pages/_index.scss */
+/* line 89, ../sass/pages/_index.scss */
 .main-travel .travels-item .img-holder .location span {
   border-radius: 20px;
   font-size: 17px;
@@ -255,23 +581,85 @@ h5 {
   padding: 2px 8px;
   letter-spacing: 1px;
 }
-/* line 94, ../sass/pages/_index.scss */
+/* line 97, ../sass/pages/_index.scss */
 .main-travel .travels-item .img-holder .location.orange span {
   background: #f7c570;
   color: #8c5d0d;
 }
-/* line 100, ../sass/pages/_index.scss */
+/* line 103, ../sass/pages/_index.scss */
 .main-travel .travels-item .img-holder .location.blue span {
   background: #9ab1d7;
   color: #235dad;
 }
-/* line 106, ../sass/pages/_index.scss */
+/* line 109, ../sass/pages/_index.scss */
 .main-travel .travels-item .img-holder .location.green span {
   background: #7cad04;
   color: #285706;
 }
-/* line 113, ../sass/pages/_index.scss */
+/* line 116, ../sass/pages/_index.scss */
 .main-travel .travels-item:hover {
-  margin-top: -10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   position: relative;
+  box-shadow: 0 1px 10px #ffffff;
+}
+/* line 122, ../sass/pages/_index.scss */
+.main-travel .travels-item:hover .img-holder .btn-holder {
+  opacity: 1;
+}
+
+/* line 1, ../sass/pages/_travel.scss */
+.travel-head {
+  display: block;
+  background-color: none;
+  background-image: url(../img/bg/head_bg.jpg);
+  background-position: center;
+  background-attachment: none;
+}
+/* line 7, ../sass/pages/_travel.scss */
+.travel-head .container {
+  height: 100%;
+  position: relative;
+}
+/* line 11, ../sass/pages/_travel.scss */
+.travel-head-centred {
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  text-align: center;
+}
+/* line 17, ../sass/pages/_travel.scss */
+.travel-head-centred-inner {
+  width: 560px;
+  margin: auto;
+}
+/* line 21, ../sass/pages/_travel.scss */
+.travel-head-centred h1 {
+  font-size: 42px;
+  color: #ffffff;
+  letter-spacing: 7px;
+  margin-bottom: 45px;
+}
+/* line 27, ../sass/pages/_travel.scss */
+.travel-head-centred p {
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  margin-bottom: 45px;
+}
+/* line 35, ../sass/pages/_travel.scss */
+.travel-head-scrollit {
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  text-align: center;
+}
+/* line 41, ../sass/pages/_travel.scss */
+.travel-head-scrollit p {
+  font-size: 13px;
+  color: #ffffff;
+  margin-top: 10px;
 }
