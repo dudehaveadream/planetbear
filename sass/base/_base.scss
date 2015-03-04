@@ -5,14 +5,38 @@
         -ms-box-sizing: border-box;
             box-sizing: border-box;
 }
-
+body {
+    font-family: $main-font;
+}
+h1,h2,h3,h4,h5 {
+    font-weight: $bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+h1 {
+    font-size: 33px;
+    color: $black;
+    letter-spacing: 3px;
+}
+h5 {
+    font-size: 18px;
+}
 .section {
-    overflow: hidden;
-    min-width: 960px;
+    min-width: $container-width;
 }
 .container {
     width: $container-width;
     margin: auto;
 }
 
-
+.btn-more {
+    display: inline-block;
+    border: 3px solid $white;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: $bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: $white;
+}

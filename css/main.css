@@ -80,17 +80,198 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-sizing: border-box;
 }
 
-/* line 9, ../sass/base/_base.scss */
+/* line 8, ../sass/base/_base.scss */
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* line 11, ../sass/base/_base.scss */
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 16, ../sass/base/_base.scss */
+h1 {
+  font-size: 33px;
+  color: #000000;
+  letter-spacing: 3px;
+}
+
+/* line 21, ../sass/base/_base.scss */
+h5 {
+  font-size: 18px;
+}
+
+/* line 24, ../sass/base/_base.scss */
 .section {
-  overflow: hidden;
   min-width: 960px;
 }
 
-/* line 13, ../sass/base/_base.scss */
+/* line 27, ../sass/base/_base.scss */
 .container {
   width: 960px;
   margin: auto;
 }
 
+/* line 32, ../sass/base/_base.scss */
+.btn-more {
+  display: inline-block;
+  border: 3px solid #ffffff;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
 /* Layout related stylesheets* */
 /* Pages */
+/* line 1, ../sass/pages/_index.scss */
+.main-travel {
+  padding: 35px 0 115px;
+  background: url(../img/bg/main_bg.jpg);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+/* line 6, ../sass/pages/_index.scss */
+.main-travel .logo-holder {
+  text-align: center;
+}
+/* line 8, ../sass/pages/_index.scss */
+.main-travel .logo-holder .logo {
+  display: inline-block;
+}
+/* line 12, ../sass/pages/_index.scss */
+.main-travel h1 {
+  margin: 15px 0 55px;
+}
+/* line 15, ../sass/pages/_index.scss */
+.main-travel .travels {
+  padding: 0 10px;
+}
+/* line 3, ../sass/helpers/_mixins.scss */
+.main-travel .travels:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 18, ../sass/pages/_index.scss */
+.main-travel .travels-item {
+  width: 295px;
+  float: left;
+  margin-right: 27px;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+/* line 24, ../sass/pages/_index.scss */
+.main-travel .travels-item:nth-child(3n+3) {
+  margin-right: 0;
+}
+/* line 27, ../sass/pages/_index.scss */
+.main-travel .travels-item-info {
+  padding: 15px;
+  background: #ffffff;
+  text-align: center;
+}
+/* line 31, ../sass/pages/_index.scss */
+.main-travel .travels-item-info h5 {
+  padding: 0 10px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+/* line 35, ../sass/pages/_index.scss */
+.main-travel .travels-item-info h5 span {
+  color: #23c358;
+}
+/* line 39, ../sass/pages/_index.scss */
+.main-travel .travels-item-info p.descrip {
+  font-size: 14px;
+  color: #5b5a5a;
+  margin-bottom: 20px;
+}
+/* line 44, ../sass/pages/_index.scss */
+.main-travel .travels-item-info p.days {
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+  color: #919191;
+  margin-bottom: 20px;
+}
+/* line 51, ../sass/pages/_index.scss */
+.main-travel .travels-item-info p.summ {
+  font-size: 19px;
+  font-weight: 300;
+  color: #919191;
+}
+/* line 55, ../sass/pages/_index.scss */
+.main-travel .travels-item-info p.summ span {
+  font-size: 31px;
+  font-weight: 600;
+  color: #00ff66;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+/* line 64, ../sass/pages/_index.scss */
+.main-travel .travels-item .img-holder {
+  width: 295px;
+  height: 224px;
+  display: block;
+  position: relative;
+}
+/* line 69, ../sass/pages/_index.scss */
+.main-travel .travels-item .img-holder img {
+  width: 100%;
+  height: 100%;
+}
+/* line 73, ../sass/pages/_index.scss */
+.main-travel .travels-item .img-holder .btn-holder {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+/* line 80, ../sass/pages/_index.scss */
+.main-travel .travels-item .img-holder .location {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+/* line 86, ../sass/pages/_index.scss */
+.main-travel .travels-item .img-holder .location span {
+  border-radius: 20px;
+  font-size: 17px;
+  font-weight: 300;
+  padding: 2px 8px;
+  letter-spacing: 1px;
+}
+/* line 94, ../sass/pages/_index.scss */
+.main-travel .travels-item .img-holder .location.orange span {
+  background: #f7c570;
+  color: #8c5d0d;
+}
+/* line 100, ../sass/pages/_index.scss */
+.main-travel .travels-item .img-holder .location.blue span {
+  background: #9ab1d7;
+  color: #235dad;
+}
+/* line 106, ../sass/pages/_index.scss */
+.main-travel .travels-item .img-holder .location.green span {
+  background: #7cad04;
+  color: #285706;
+}
+/* line 113, ../sass/pages/_index.scss */
+.main-travel .travels-item:hover {
+  margin-top: -10px;
+  position: relative;
+}

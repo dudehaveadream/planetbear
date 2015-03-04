@@ -1,0 +1,134 @@
+.main-travel {
+    padding: 35px 0 115px;
+    background: url(../img/bg/main_bg.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    .logo-holder {
+        text-align: center;
+        .logo {
+            display: inline-block;
+        }
+    }
+    h1 {
+        margin: 15px 0 55px;
+    }
+    .travels {
+        @include clearfix;
+        padding: 0 10px;
+        &-item {
+            width: 295px;
+            float: left;
+            margin-right: 27px;
+            margin-bottom: 30px;
+            @include transition (all, 0.3s, linear);
+            &:nth-child(3n+3) {
+                margin-right: 0;
+            }
+            &-info {
+                padding: 15px;
+                background: $white;
+                text-align: center;
+                h5 {
+                    padding: 0 10px;
+                    margin-bottom: 20px;
+                    letter-spacing: 1px;
+                    span {
+                        color: $green-darken;
+                    }
+                }
+                p.descrip {
+                    font-size: 14px;
+                    color: #5b5a5a;
+                    margin-bottom: 20px;
+                }
+                p.days {
+                    font-size: 14px;
+                    font-weight: $light;
+                    font-style: italic;
+                    color: #919191;
+                    margin-bottom: 20px;
+                }
+                p.summ {
+                    font-size: 19px;
+                    font-weight: $light;
+                    color: #919191;
+                    span {
+                        font-size: 31px;
+                        font-weight: $bold;
+                        color: $green-lighter;
+                        margin-left: 10px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .img-holder {
+                width: 295px;
+                height: 224px;
+                display: block;
+                position: relative;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .btn-holder {
+                    position: absolute;
+                    top: 80px;
+                    left: 0;
+                    width: 100%;
+                    text-align: center;
+                }
+                .location {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 0;
+                    width: 100%;
+                    text-align: center;
+                    span {
+                        border-radius: 20px;
+                        font-size: 17px;
+                        font-weight: $light;
+                        padding: 2px 8px;
+                        letter-spacing: 1px;
+                    }
+                    &.orange {
+                        span {
+                            background: #f7c570;
+                            color: #8c5d0d;
+                        }
+                    }
+                    &.blue {
+                        span {
+                            background: #9ab1d7;
+                            color: #235dad;
+                        }
+                    }
+                    &.green {
+                        span {
+                            background: #7cad04;
+                            color: #285706;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                margin-top: -10px;
+                position: relative;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
