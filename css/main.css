@@ -19,6 +19,39 @@
 /* Waitfor */
 /* block, none */
 /* none, fixed, scroll*/
+/* Result */
+/* block, none */
+/* none, fixed, scroll*/
+/* line 42, ../sass/helpers/_variables.scss */
+.travel-result {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+
+/* Firstinvite */
+/* block, none */
+/* none, fixed, scroll*/
+/* line 53, ../sass/helpers/_variables.scss */
+.travel-firstinvite {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+
+/* Secondinvite */
+/* block, none */
+/* none, fixed, scroll*/
+/* line 64, ../sass/helpers/_variables.scss */
+.travel-secondinvite {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+
 /* Base stuff */
 /* Reset */
 /* line 5, C:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
@@ -153,15 +186,16 @@ a:hover {
 /* line 47, ../sass/base/_base.scss */
 .section {
   min-width: 960px;
+  overflow: hidden;
 }
 
-/* line 50, ../sass/base/_base.scss */
+/* line 51, ../sass/base/_base.scss */
 .container {
   width: 960px;
   margin: auto;
 }
 
-/* line 55, ../sass/base/_base.scss */
+/* line 56, ../sass/base/_base.scss */
 .btn-more {
   display: inline-block;
   border: 3px solid #ffffff;
@@ -174,7 +208,7 @@ a:hover {
   color: #ffffff;
 }
 
-/* line 67, ../sass/base/_base.scss */
+/* line 68, ../sass/base/_base.scss */
 .btn-transparent {
   display: inline-block;
   font-size: 12px;
@@ -191,7 +225,7 @@ a:hover {
   -o-transition: all 0.4s linear;
   transition: all 0.4s linear;
 }
-/* line 78, ../sass/base/_base.scss */
+/* line 79, ../sass/base/_base.scss */
 .btn-transparent:hover {
   -webkit-box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.7);
   -moz-box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.7);
@@ -199,7 +233,7 @@ a:hover {
   text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
 }
 
-/* line 84, ../sass/base/_base.scss */
+/* line 85, ../sass/base/_base.scss */
 .btn-green {
   display: inline-block;
   background: #00ff66;
@@ -217,7 +251,7 @@ a:hover {
   -o-transition: all 0.4s linear;
   transition: all 0.4s linear;
 }
-/* line 96, ../sass/base/_base.scss */
+/* line 97, ../sass/base/_base.scss */
 .btn-green:hover {
   color: #006b2b;
   -webkit-box-shadow: inset 0 0 13px 3px #ffffff;
@@ -274,7 +308,7 @@ a:hover {
 /* line 28, ../sass/layout/_header.scss */
 .header-nav li {
   display: inline-block;
-  margin-left: 35px;
+  margin-left: 33px;
 }
 /* line 31, ../sass/layout/_header.scss */
 .header-nav li a {
@@ -332,24 +366,29 @@ a:hover {
 .header-visible .page-nav li a {
   font-size: 15px;
   font-weight: 300;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
-/* line 71, ../sass/layout/_header.scss */
+/* line 72, ../sass/layout/_header.scss */
 .header-callback {
   float: right;
 }
-/* line 73, ../sass/layout/_header.scss */
+/* line 74, ../sass/layout/_header.scss */
 .header-callback .phone {
   display: inline-block;
   vertical-align: middle;
   text-align: right;
 }
-/* line 77, ../sass/layout/_header.scss */
+/* line 78, ../sass/layout/_header.scss */
 .header-callback .phone h5 {
   font-size: 15px;
   color: #ffffff;
   margin-bottom: 5px;
 }
-/* line 82, ../sass/layout/_header.scss */
+/* line 83, ../sass/layout/_header.scss */
 .header-callback .phone a {
   font-size: 13px;
   font-weight: 300;
@@ -363,11 +402,11 @@ a:hover {
   -o-transition: all 0.4s linear;
   transition: all 0.4s linear;
 }
-/* line 90, ../sass/layout/_header.scss */
+/* line 91, ../sass/layout/_header.scss */
 .header-callback .phone a:hover {
   border-color: #ffffff;
 }
-/* line 95, ../sass/layout/_header.scss */
+/* line 96, ../sass/layout/_header.scss */
 .header-callback .btn-green {
   border-bottom: none;
   font-size: 13px;
@@ -376,28 +415,28 @@ a:hover {
   line-height: 1.3;
   margin-left: 5px;
 }
-/* line 103, ../sass/layout/_header.scss */
+/* line 104, ../sass/layout/_header.scss */
 .header-callback .btn-transparent {
   vertical-align: middle;
   margin-left: 5px;
 }
 
-/* line 110, ../sass/layout/_header.scss */
+/* line 111, ../sass/layout/_header.scss */
 .header.sticky .header-logo {
   margin-top: 3px;
 }
-/* line 112, ../sass/layout/_header.scss */
+/* line 113, ../sass/layout/_header.scss */
 .header.sticky .header-logo img {
   width: 40px;
   height: 40px;
 }
-/* line 117, ../sass/layout/_header.scss */
+/* line 118, ../sass/layout/_header.scss */
 .header.sticky .header-nav {
   height: 0;
   visibility: hidden;
   opacity: 0;
 }
-/* line 122, ../sass/layout/_header.scss */
+/* line 123, ../sass/layout/_header.scss */
 .header.sticky .header-visible {
   padding-top: 0;
 }
@@ -445,18 +484,22 @@ a:hover {
   -o-transition: all 0.4s linear;
   transition: all 0.4s linear;
 }
-/* line 30, ../sass/layout/_footer.scss */
+/* line 27, ../sass/layout/_footer.scss */
+.footer-top .footer-nav li.active a {
+  color: #00ff66;
+}
+/* line 33, ../sass/layout/_footer.scss */
 .footer-bottom {
   padding-top: 15px;
 }
-/* line 32, ../sass/layout/_footer.scss */
+/* line 35, ../sass/layout/_footer.scss */
 .footer-bottom p {
   font-size: 14px;
   font-weight: 300;
   color: #7a7a7a;
   line-height: 1.2;
 }
-/* line 38, ../sass/layout/_footer.scss */
+/* line 41, ../sass/layout/_footer.scss */
 .footer-bottom p.copyright {
   float: right;
   color: #4b4b4b;
@@ -464,7 +507,7 @@ a:hover {
   text-transform: uppercase;
   margin-top: 15px;
 }
-/* line 44, ../sass/layout/_footer.scss */
+/* line 47, ../sass/layout/_footer.scss */
 .footer-bottom p.copyright span {
   font-weight: 600;
   position: absolute;
@@ -788,4 +831,146 @@ a:hover {
   font-style: italic;
   line-height: 1.2;
   color: #ed7070;
+}
+
+/* line 1, ../sass/pages/travel-sections/_result.scss */
+.travel-result {
+  display: block;
+  background-color: none;
+  background-image: url(../img/bg/result_bg.jpg);
+  background-position: center;
+  background-attachment: none;
+  padding: 35px 0 60px;
+}
+/* line 8, ../sass/pages/travel-sections/_result.scss */
+.travel-result .title {
+  margin-bottom: 55px;
+}
+/* line 11, ../sass/pages/travel-sections/_result.scss */
+.travel-result-inner {
+  width: 780px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+/* line 15, ../sass/pages/travel-sections/_result.scss */
+.travel-result-inner p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+/* line 21, ../sass/pages/travel-sections/_result.scss */
+.travel-result-advert {
+  width: 730px;
+  margin: auto;
+  text-align: center;
+  border: 5px solid #17cb5f;
+  padding: 25px 30px;
+}
+/* line 27, ../sass/pages/travel-sections/_result.scss */
+.travel-result-advert p {
+  font-size: 17px;
+  font-weight: 600;
+  color: #000000;
+  letter-spacing: 1px;
+  line-height: 1.1;
+}
+
+/* line 1, ../sass/pages/travel-sections/_firstinvite.scss */
+.travel-firstinvite {
+  display: block;
+  background-color: none;
+  background-image: url(../img/bg/firstinvite_bg.jpg);
+  background-position: center;
+  background-attachment: none;
+}
+/* line 7, ../sass/pages/travel-sections/_firstinvite.scss */
+.travel-firstinvite .container {
+  position: relative;
+  padding: 25px 0 20px;
+}
+/* line 10, ../sass/pages/travel-sections/_firstinvite.scss */
+.travel-firstinvite .container:before {
+  content: '';
+  background: url(../img/monk.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -5px;
+  left: -80px;
+  z-index: 5;
+}
+/* line 22, ../sass/pages/travel-sections/_firstinvite.scss */
+.travel-firstinvite .title {
+  color: #ffffff;
+  margin-bottom: 45px;
+  position: relative;
+  z-index: 15;
+}
+/* line 28, ../sass/pages/travel-sections/_firstinvite.scss */
+.travel-firstinvite-inner {
+  width: 560px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 15;
+}
+/* line 34, ../sass/pages/travel-sections/_firstinvite.scss */
+.travel-firstinvite-inner p {
+  font-size: 17px;
+  color: #4b4b4b;
+  line-height: 1.2;
+  margin-bottom: 35px;
+}
+
+/* line 1, ../sass/pages/travel-sections/_secondinvite.scss */
+.travel-secondinvite {
+  display: block;
+  background-color: none;
+  background-image: url(../img/bg/secondinvite_bg.jpg);
+  background-position: center;
+  background-attachment: none;
+}
+/* line 7, ../sass/pages/travel-sections/_secondinvite.scss */
+.travel-secondinvite .container {
+  position: relative;
+  padding: 55px 0 15px;
+}
+/* line 10, ../sass/pages/travel-sections/_secondinvite.scss */
+.travel-secondinvite .container:before {
+  content: '';
+  background: url(../img/map.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: -80px;
+  z-index: 5;
+}
+/* line 22, ../sass/pages/travel-sections/_secondinvite.scss */
+.travel-secondinvite .title {
+  color: #ffffff;
+  margin-bottom: 45px;
+  position: relative;
+  z-index: 15;
+}
+/* line 27, ../sass/pages/travel-sections/_secondinvite.scss */
+.travel-secondinvite .title span {
+  color: #ffffff;
+}
+/* line 31, ../sass/pages/travel-sections/_secondinvite.scss */
+.travel-secondinvite-inner {
+  width: 560px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 15;
+}
+/* line 37, ../sass/pages/travel-sections/_secondinvite.scss */
+.travel-secondinvite-inner p {
+  font-size: 17px;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 35px;
 }

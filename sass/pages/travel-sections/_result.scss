@@ -1,0 +1,35 @@
+.travel-result {
+    display: $result-display;
+    background-color: $result-background-color;
+    background-image: $result-background-image;
+    background-position: $result-background-position;
+    background-attachment: $result-background-attachment;
+    padding: 35px 0 60px;
+    .title {
+        margin-bottom: 55px;
+    }
+    &-inner {
+        width: 780px;
+        margin: 0 auto 50px;
+        text-align: center;
+        p {
+            font-size: 17px;
+            font-weight: $light;
+            line-height: 1.2;
+        }
+    }
+    &-advert {
+        width: 730px;
+        margin: auto;
+        text-align: center;
+        border: 5px solid #17cb5f;
+        padding: 25px 30px;
+        p {
+            font-size: 17px;
+            font-weight: $bold;
+            color: $black;
+            letter-spacing: 1px;
+            line-height: 1.1;
+        }
+    }
+}

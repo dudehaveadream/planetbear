@@ -1,0 +1,41 @@
+.travel-firstinvite {
+    display: $firstinvite-display;
+    background-color: $firstinvite-background-color;
+    background-image: $firstinvite-background-image;
+    background-position: $firstinvite-background-position;
+    background-attachment: $firstinvite-background-attachment;
+    .container {
+        position: relative;
+        padding: 25px 0 20px;
+        &:before {
+            content: '';
+            background: $firstinvite-left-image;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: -5px;
+            left: -80px;
+            z-index: 5;
+        }
+    }
+    .title {
+        color: $white;
+        margin-bottom: 45px;
+        position: relative;
+        z-index: 15;
+    }
+    &-inner {
+        width: 560px;
+        margin: auto;
+        text-align: center;
+        position: relative;
+        z-index: 15;
+        p {
+            font-size: 17px;
+            color: #4b4b4b;
+            line-height: 1.2;
+            margin-bottom: 35px;
+        }
+    }
+}

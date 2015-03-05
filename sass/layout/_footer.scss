@@ -24,6 +24,9 @@
                     letter-spacing: 1px;
                     @include transition (all, .4s, linear);
                 }
+                &.active a {
+                    color: $green-lighter;
+                }
             }
         }
     }

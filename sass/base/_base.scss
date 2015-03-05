@@ -46,6 +46,7 @@ a {
 }
 .section {
     min-width: $container-width;
+    overflow: hidden;
 }
 .container {
     width: $container-width;

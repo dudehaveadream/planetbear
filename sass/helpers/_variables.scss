@@ -31,3 +31,36 @@ $waitfor-background-color: $white;
 $waitfor-background-image: url();
 $waitfor-background-position: center;
 $waitfor-background-attachment: none; /* none, fixed, scroll*/
+
+
+/* Result */
+$result-display: block; /* block, none */
+$result-background-color: none;
+$result-background-image: url(../img/bg/result_bg.jpg);
+$result-background-position: center;
+$result-background-attachment: none; /* none, fixed, scroll*/
+.travel-result {
+    @include background-size (cover);
+}
+
+/* Firstinvite */
+$firstinvite-display: block; /* block, none */
+$firstinvite-background-color: none;
+$firstinvite-background-image: url(../img/bg/firstinvite_bg.jpg);
+$firstinvite-background-position: center;
+$firstinvite-background-attachment: none; /* none, fixed, scroll*/
+$firstinvite-left-image: url(../img/monk.png);
+.travel-firstinvite {
+    @include background-size (cover);
+}
+
+/* Secondinvite */
+$secondinvite-display: block; /* block, none */
+$secondinvite-background-color: none;
+$secondinvite-background-image: url(../img/bg/secondinvite_bg.jpg);
+$secondinvite-background-position: center;
+$secondinvite-background-attachment: none; /* none, fixed, scroll*/
+$secondinvite-left-image: url(../img/map.png);
+.travel-secondinvite {
+    @include background-size (cover);
+}

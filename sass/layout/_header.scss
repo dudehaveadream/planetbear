@@ -27,7 +27,7 @@
         @include transition (all, 0.3s, linear);
         li {
             display: inline-block;
-            margin-left: 35px;
+            margin-left: 33px;
             a {
                 font-size: 13px;
                 font-weight: $bold;
@@ -64,6 +64,7 @@
                 a {
                     font-size: 15px;
                     font-weight: $light;
+                    @include transition (all, 0.4s, linear);
                 }
             }
         }
