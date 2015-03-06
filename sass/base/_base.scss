@@ -99,3 +99,7 @@ a {
         @include box-shadow (inset 0 0 13px 3px $white);
     }
 }
+.btn-green.rounded {
+    @include border-radius (20px);
+    font-size: 18px;
+}

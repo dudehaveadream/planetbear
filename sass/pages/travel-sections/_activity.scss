@@ -12,6 +12,10 @@
             color: #ffffff;
         }
     }
+    .btn-holder {
+        text-align: center;
+        margin-top: 40px;
+    }
     &-inner {
         @include clearfix;
     }
