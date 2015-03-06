@@ -1,0 +1,95 @@
+.travel-gallery {
+    display: $gallery-display;
+    background-color: $gallery-background-color;
+    background-image: $gallery-background-image;
+    background-position: $gallery-background-position;
+    background-attachment: $gallery-background-attachment;
+    padding: 55px 0 35px;
+    .title {
+        margin-bottom: 40px;
+    }
+    .subtitle {
+        font-size: 17px;
+        font-weight: 300;
+        color: #4b4b4b;
+        margin-bottom: 40px;
+        line-height: 1.2;
+        padding: 0 140px;
+        text-align: center;
+    }
+    .btn-holder {
+        text-align: center;
+        margin-top: 15px;
+        p {
+            font-size: 17px;
+            font-weight: 300;
+            color: #4b4b4b;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+    }
+    &-inner {
+        @include clearfix;
+    }
+    &-item {
+        width: 472px;
+        height: 258px;
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        position: relative;
+        overflow: hidden;
+        &:nth-child(2n+2) {
+            margin-right: 0;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        .gallery-caption {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            &:before {
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background: rgba(0,0,0,.5);
+                @include transition (all, 0.2s, linear);
+            }
+            h5, p {
+                color: $white;
+                z-index: 10;
+                position: relative;
+                opacity: 0;
+                @include transition (all, 0.4s, linear);
+            }
+            h5 {
+                text-align: left;
+                margin-bottom: 10px;
+
+            }
+            p {
+                font-size: 17px;
+                font-weight: $light;
+                line-height: 1.2;
+
+            }
+        }
+        &:hover {
+            .gallery-caption {
+                &:before {
+                    top: 0;
+                }
+                h5, p {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

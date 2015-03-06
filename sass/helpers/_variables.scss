@@ -42,7 +42,6 @@ $activity-background-attachment: fixed; /* none, fixed, scroll*/
     @include background-size (cover);
 }
 
-
 /* Result */
 $result-display: block; /* block, none */
 $result-background-color: none;
@@ -52,6 +51,13 @@ $result-background-attachment: none; /* none, fixed, scroll*/
 .travel-result {
     @include background-size (cover);
 }
+
+/* Gallery */
+$gallery-display: block; /* block, none */
+$gallery-background-color: $white;
+$gallery-background-image: url();
+$gallery-background-position: center;
+$gallery-background-attachment: none; /* none, fixed, scroll*/
 
 /* Firstinvite */
 $firstinvite-display: block; /* block, none */

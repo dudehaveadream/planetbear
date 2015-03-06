@@ -38,6 +38,9 @@
   background-size: cover;
 }
 
+/* Gallery */
+/* block, none */
+/* none, fixed, scroll*/
 /* Firstinvite */
 /* block, none */
 /* none, fixed, scroll*/
@@ -866,6 +869,106 @@ a:hover {
   color: #000000;
   letter-spacing: 1px;
   line-height: 1.1;
+}
+
+.travel-gallery {
+  display: block;
+  background-color: #ffffff;
+  background-image: url();
+  background-position: center;
+  background-attachment: none;
+  padding: 55px 0 35px;
+}
+.travel-gallery .title {
+  margin-bottom: 40px;
+}
+.travel-gallery .subtitle {
+  font-size: 17px;
+  font-weight: 300;
+  color: #4b4b4b;
+  margin-bottom: 40px;
+  line-height: 1.2;
+  padding: 0 140px;
+  text-align: center;
+}
+.travel-gallery .btn-holder {
+  text-align: center;
+  margin-top: 15px;
+}
+.travel-gallery .btn-holder p {
+  font-size: 17px;
+  font-weight: 300;
+  color: #4b4b4b;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+.travel-gallery-inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.travel-gallery-item {
+  width: 472px;
+  height: 258px;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.travel-gallery-item:nth-child(2n+2) {
+  margin-right: 0;
+}
+.travel-gallery-item img {
+  width: 100%;
+  height: 100%;
+}
+.travel-gallery-item .gallery-caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+.travel-gallery-item .gallery-caption:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.travel-gallery-item .gallery-caption h5, .travel-gallery-item .gallery-caption p {
+  color: #ffffff;
+  z-index: 10;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.travel-gallery-item .gallery-caption h5 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.travel-gallery-item .gallery-caption p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.travel-gallery-item:hover .gallery-caption:before {
+  top: 0;
+}
+.travel-gallery-item:hover .gallery-caption h5, .travel-gallery-item:hover .gallery-caption p {
+  opacity: 1;
 }
 
 .travel-firstinvite {
