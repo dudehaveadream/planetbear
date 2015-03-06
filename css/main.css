@@ -92,6 +92,8 @@
 
 /* Choice */
 /* block, none */
+/* Form */
+/* block, none */
 /* Base stuff */
 /* Reset */
 html, body, div, span, applet, object, iframe,
@@ -1507,4 +1509,119 @@ a:hover {
 }
 .travel-choice-inner .choice.centred {
   margin-top: -48px;
+}
+
+.travel-form {
+  display: block;
+  padding: 55px 0 30px;
+}
+.travel-form .title {
+  margin-bottom: 40px;
+}
+.travel-form-inner {
+  width: 580px;
+  margin: auto;
+  padding: 25px 80px 15px 25px;
+  background: #ffffff;
+  position: relative;
+}
+.travel-form-inner:after {
+  content: '';
+  width: 25px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: url(../img/form_after.png) repeat-y;
+}
+.travel-form-inner p {
+  font-size: 15px;
+  font-style: italic;
+  color: #9d9d9d;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+.travel-form-inner .input-holder {
+  margin-bottom: 14px;
+}
+.travel-form-inner .input-holder:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.travel-form-inner .input-holder label {
+  font-size: 17px;
+  color: #5b5b5b;
+  height: 42px;
+  line-height: 42px;
+  display: inline-block;
+}
+.travel-form-inner .input-holder .input-inner {
+  width: 310px;
+  float: right;
+}
+.travel-form-inner .input-holder .input-inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.travel-form-inner .input-holder .input-inner input {
+  width: 100%;
+  padding: 11px 10px;
+  border: 1px solid #cccccc;
+  font-size: 16px;
+  columns: #000000;
+  outline: none;
+}
+.travel-form-inner .input-holder .input-inner input:hover {
+  border-color: #979797;
+}
+.travel-form-inner .input-holder .input-inner input:focus {
+  -webkit-box-shadow: 0 0 5px 1px #00ff66;
+  -moz-box-shadow: 0 0 5px 1px #00ff66;
+  box-shadow: 0 0 5px 1px #00ff66;
+  border-color: #979797;
+}
+.travel-form-inner .input-holder .input-inner input.left {
+  width: 48%;
+  float: left;
+}
+.travel-form-inner .input-holder .input-inner input.right {
+  width: 48%;
+  float: right;
+}
+.travel-form-inner .btn-holder {
+  text-align: center;
+  margin-top: 30px;
+}
+.travel-form-info {
+  width: 450px;
+  margin: 50px auto 0;
+}
+.travel-form-info img {
+  float: left;
+}
+.travel-form-info p {
+  padding-left: 65px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+::-webkit-input-placeholder {
+  color: #b7b7b7;
+  font-size: 16px;
+  font-style: italic;
+}
+
+:-moz-placeholder {
+  color: #b7b7b7;
+  font-size: 16px;
+  font-style: italic;
+}
+
+:-ms-input-placeholder {
+  color: #b7b7b7;
+  font-size: 16px;
+  font-style: italic;
 }

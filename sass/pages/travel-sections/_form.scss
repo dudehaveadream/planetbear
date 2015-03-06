@@ -1,0 +1,102 @@
+.travel-form {
+    display: $form-display;
+    padding: 55px 0 30px;
+    .title {
+        margin-bottom: 40px;
+    }
+    &-inner {
+        width: 580px;
+        margin: auto;
+        padding: 25px 80px 15px 25px;
+        background: $white;
+        position: relative;
+        &:after {
+            content: '';
+            width: 25px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background: url(../img/form_after.png) repeat-y;
+        }
+        p {
+            font-size: 15px;
+            font-style: italic;
+            color: #9d9d9d;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+        .input-holder {
+            margin-bottom: 14px;
+            @include clearfix;
+            label {
+                font-size: 17px;
+                color: #5b5b5b;
+                height: 42px;
+                line-height: 42px;
+                display: inline-block;
+            }
+            .input-inner {
+                width: 310px;
+                float: right;
+                @include clearfix;
+                input {
+                    width: 100%;
+                    padding: 11px 10px;
+                    border: 1px solid #cccccc;
+                    font-size: 16px;
+                    columns: $black;
+                    outline: none;
+                    &:hover {
+                        border-color: #979797;
+                    }
+                    &:focus {
+                        @include box-shadow (0 0 5px 1px $green-lighter);
+                        border-color: #979797;
+                    }
+                    &.left {
+                        width: 48%;
+                        float: left;
+                    }
+                    &.right {
+                        width: 48%;
+                        float: right;
+                    }
+                }
+            }
+        }
+        .btn-holder {
+            text-align: center;
+            margin-top: 30px;
+        }
+    }
+    &-info {
+        width: 450px;
+        margin: 50px auto 0;
+        img {
+            float: left;
+        }
+        p {
+            padding-left: 65px;
+            font-size: 15px;
+            font-weight: $light;
+            line-height: 1.2;
+        }
+    }
+}
+
+::-webkit-input-placeholder {
+    color: #b7b7b7;
+    font-size: 16px;
+    font-style: italic;
+}
+:-moz-placeholder {
+    color: #b7b7b7;
+    font-size: 16px;
+    font-style: italic;
+}
+:-ms-input-placeholder {
+    color: #b7b7b7;
+    font-size: 16px;
+    font-style: italic;
+}

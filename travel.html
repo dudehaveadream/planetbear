@@ -8,12 +8,15 @@
 
     <!-- Styles -->
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/selectordie.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/wow.js" type="text/javascript"></script>
+    <script src="js/selectordie.min.js" type="text/javascript"></script>
+
     <script>
         $(document).ready(function(){
             wow = new WOW(
@@ -42,6 +45,9 @@
                     $('.header').removeClass("sticky");
                 }
             });
+
+            $('.travel-form-inner select').selectOrDie();
+
         });
     </script>
 
@@ -476,7 +482,48 @@
     </div>
 </div><!-- Choise end -->
 
+<div class="section travel-form">
+    <div class="container">
+        <h2 class="title">Заполните форму</h2>
+        <form action="" class="travel-form-inner">
+            <p>Заполните форму и наш менеджер перезвонит Вам в течение 30 минут, чтобы помочь Вам присоединиться к путешествию</p>
+            <div class="input-holder">
+                <label>Введите имя</label>
+                <div class="input-inner">
+                    <input type="text" placeholder="Ваше имя" class="left">
+                    <input type="text" placeholder="Ваше фамилия" class="right">
+                </div>
+            </div>
+            <div class="input-holder">
+                <label>Введите имя</label>
+                <div class="input-inner"><input type="text" placeholder="Введите Ваш email"></div>
+            </div>
+            <div class="input-holder">
+                <label>Введите телефон</label>
+                <div class="input-inner"><input type="text" placeholder="Введите Ваш мобильный телефон"></div>
+            </div>
+            <div class="input-holder">
+                <label>Вариант тура</label>
+                <div class="input-inner">
+                    <select>
+                        <option>VIP-путшествие  - 24 900$</option>
+                        <option>VIP-путшествие  - 1 300$</option>
+                        <option>VIP-путшествие  - 4 600$</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-holder">
+                <div class="input-inner"><a href="#" class="btn-green">оставить<br>заявку</a></div>
+            </div>
+        </form>
+        <div class="travel-form-info">
+            <img src="img/icons/info.png" alt="">
+            <p>Заявка не является бронированием тура и не накладывает на Вас каких-либо обязательств</p>
+        </div>
+    </div>
 </div>
+
+</div><!-- Bottom end -->
 
 <div class="section footer">
     <div class="container">
