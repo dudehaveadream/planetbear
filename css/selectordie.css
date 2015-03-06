@@ -104,10 +104,10 @@
         {
             position: absolute;
             top: 100%;
-            left: 0;
+            left: -1px;
             display: none;
             height: auto;
-            width: 100%;
+            width: 310px;
             background: #ffffff;
             border: 1px solid #979797;
             border-top: none;

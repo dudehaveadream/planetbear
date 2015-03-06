@@ -41,19 +41,6 @@
                 float: right;
                 @include clearfix;
                 input {
-                    width: 100%;
-                    padding: 11px 10px;
-                    border: 1px solid #cccccc;
-                    font-size: 16px;
-                    columns: $black;
-                    outline: none;
-                    &:hover {
-                        border-color: #979797;
-                    }
-                    &:focus {
-                        @include box-shadow (0 0 5px 1px $green-lighter);
-                        border-color: #979797;
-                    }
                     &.left {
                         width: 48%;
                         float: left;
