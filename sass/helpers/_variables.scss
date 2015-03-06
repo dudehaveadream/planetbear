@@ -65,10 +65,10 @@ $firstinvite-background-color: none;
 $firstinvite-background-image: url(../img/bg/firstinvite_bg.jpg);
 $firstinvite-background-position: center;
 $firstinvite-background-attachment: none; /* none, fixed, scroll*/
-$firstinvite-left-image: url(../img/monk.png);
 .travel-firstinvite {
     @include background-size (cover);
 }
+$firstinvite-left-image: url(../img/monk.png);
 
 /* Route */
 $route-display: block; /* block, none */
@@ -83,7 +83,39 @@ $secondinvite-background-color: none;
 $secondinvite-background-image: url(../img/bg/secondinvite_bg.jpg);
 $secondinvite-background-position: center;
 $secondinvite-background-attachment: none; /* none, fixed, scroll*/
-$secondinvite-left-image: url(../img/map.png);
 .travel-secondinvite {
     @include background-size (cover);
 }
+$secondinvite-left-image: url(../img/map.png);
+
+/* Author */
+$author-display: block; /* block, none */
+$author-background-color: none;
+$author-background-image: url(../img/bg/author_bg.jpg);
+$author-background-position: center;
+$author-background-attachment: none; /* none, fixed, scroll*/
+.travel-author {
+    @include background-size (cover);
+}
+$author-inner-bg: #ffffff;
+$author-inner-text: #4b4b4b;
+$author-inner-name: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

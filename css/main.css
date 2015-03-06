@@ -64,6 +64,16 @@
   background-size: cover;
 }
 
+/* Author */
+/* block, none */
+/* none, fixed, scroll*/
+.travel-author {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+
 /* Base stuff */
 /* Reset */
 html, body, div, span, applet, object, iframe,
@@ -1190,4 +1200,39 @@ a:hover {
   color: #ffffff;
   line-height: 1.2;
   margin-bottom: 35px;
+}
+
+.travel-author {
+  display: block;
+  background-color: none;
+  background-image: url(../img/bg/author_bg.jpg);
+  background-position: center;
+  background-attachment: none;
+  padding: 45px 0 55px;
+}
+.travel-author .title {
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.travel-author .title span {
+  color: #ffffff;
+}
+.travel-author-inner {
+  width: 645px;
+  background: #ffffff;
+  margin-left: 10px;
+  padding: 30px 30px 20px 45px;
+}
+.travel-author-inner p {
+  font-size: 17px;
+  font-weight: 300;
+  color: #4b4b4b;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.travel-author-inner h5 {
+  font-size: 15px;
+  text-align: right;
+  letter-spacing: 2px;
+  color: #000000;
 }
