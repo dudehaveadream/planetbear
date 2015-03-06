@@ -32,6 +32,16 @@ $waitfor-background-image: url();
 $waitfor-background-position: center;
 $waitfor-background-attachment: none; /* none, fixed, scroll*/
 
+/* Activity */
+$activity-display: block; /* block, none */
+$activity-background-color: none;
+$activity-background-image: url(../img/bg/activity_bg.jpg);
+$activity-background-position: center;
+$activity-background-attachment: fixed; /* none, fixed, scroll*/
+.travel-activity {
+    @include background-size (cover);
+}
+
 
 /* Result */
 $result-display: block; /* block, none */

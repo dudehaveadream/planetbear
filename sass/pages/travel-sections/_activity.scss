@@ -1,0 +1,84 @@
+.travel-activity {
+    display: $activity-display;
+    background-color: $activity-background-color;
+    background-image: $activity-background-image;
+    background-position: $activity-background-position;
+    background-attachment: $activity-background-attachment;
+    padding: 45px 0;
+    .title {
+        color: #ffffff;
+        margin-bottom: 65px;
+        span {
+            color: #ffffff;
+        }
+    }
+    &-inner {
+        @include clearfix;
+    }
+    &-item {
+        float: left;
+        width: 275px;
+        border: 5px solid red;
+        margin-right: 67px;
+        margin-bottom: 20px;
+        &-inside {
+            background: rgba(255,255,255,.9);
+            padding: 11px;
+            @include clearfix;
+        }
+        &:nth-child(3n+3) {
+            margin-right: 0;
+        }
+        .image-holder {
+            float: left;
+            img {
+                width: 82px;
+                height: 82px;
+            }
+        }
+        .text-holder {
+            float: right;
+            width: 150px;
+            h5 {
+                text-align: left;
+                font-size: 15px;
+                color: #121212;
+                line-height: 1.2;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 15px;
+                font-weight: $light;
+                color: #646464;
+                line-height: 1.2;
+            }
+        }
+        &.green-light {
+            border-color: rgba(23,203,95,.8);
+        }
+        &.green-dark {
+            border-color: rgba(39,184,35,.8);
+        }
+        &.yellow {
+            border-color: rgba(234,232,28,.8);
+        }
+        &.red {
+            border-color: rgba(231,89,89,.8);
+        }
+        &.orange {
+            border-color: rgba(216,175,50,.8);
+        }
+        &.blue-light {
+            border-color: rgba(66,231,233,.8);
+        }
+        &.blue-dark {
+            border-color: rgba(45,187,246,.8);
+        }
+        &.purpure {
+            border-color: rgba(203,110,242,.8);
+        }
+        &.brown {
+            border-color: rgba(145,128,112,.8);
+        }
+    }
+}
