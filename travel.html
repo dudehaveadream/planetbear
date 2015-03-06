@@ -14,8 +14,10 @@
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="js/wow.js" type="text/javascript"></script>
     <script src="js/selectordie.min.js" type="text/javascript"></script>
+    <script src="js/counterup.js" type="text/javascript"></script>
 
     <script>
         $(document).ready(function(){
@@ -35,6 +37,26 @@
             $(window).resize(function(){
                 var wHeight = $(window).height();
                 $('.travel-head').height(wHeight);
+            });
+
+            $('.number1').counterUp({
+                delay: 10,
+                time: 2000
+            });
+
+            $('.number2').counterUp({
+                delay: 40,
+                time: 4500
+            });
+
+            $('.number3').counterUp({
+                delay: 20,
+                time: 5500
+            });
+
+            $('.number4').counterUp({
+                delay: 5,
+                time: 6000
             });
 
             $(window).scroll(function() {
@@ -367,7 +389,50 @@
     </div>
 </div><!-- Secondinvite end -->
 
-<div class="travel-author">
+<div class="section travel-numbers">
+    <div class="container">
+        <h2 class="title">Вы любите цифры?</h2>
+        <div class="travel-numbers-inner">
+            <img src="img/icons/path1.png" alt="" class="path path1 wow fadeInLeft" data-wow-delay="1000ms">
+            <img src="img/icons/path2.png" alt="" class="path path2 wow fadeInLeft" data-wow-delay="2000ms">
+            <img src="img/icons/path3.png" alt="" class="path path3 wow fadeInLeft" data-wow-delay="3000ms">
+            <div class="travel-numbers-item number-first wow fadeInLeft" data-wow-delay="500ms">
+                <div class="number-text">
+                    <p class="left">Вместе с</p>
+                    <p class="numbers number1">14</p>
+                    <p class="right">умными и интересными людьми</p>
+                </div>
+                <img src="img/icons/numbers1.png" alt="">
+            </div>
+            <div class="travel-numbers-item number-second wow fadeInLeft" data-wow-delay="1500ms">
+                <img src="img/icons/numbers2.png" alt="">
+                <div class="number-text">
+                    <p class="left">Вы проедете</p>
+                    <p class="numbers number2">1526</p>
+                    <p class="right">километров,</p>
+                </div>
+            </div>
+            <div class="travel-numbers-item number-third wow fadeInLeft" data-wow-delay="2500ms">
+                <div class="number-text">
+                    <p class="left">посетив</p>
+                    <p class="numbers number3">10</p>
+                    <p class="right">островов</p>
+                </div>
+                <img src="img/icons/numbers3.png" alt="">
+            </div>
+            <div class="travel-numbers-item number-fourth wow fadeInLeft" data-wow-delay="3500ms">
+                <img src="img/icons/numbers4.png" alt="">
+                <div class="number-text">
+                    <p class="left">и поучаствуете в</p>
+                    <p class="numbers number4">68</p>
+                    <p class="left">активностях</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- Numbers end -->
+
+<div class="section travel-author">
     <div class="container">
         <h2 class="title"><span>познакомьтесь с</span>автором путешествия</h2>
         <div class="travel-author-inner">
@@ -521,7 +586,7 @@
             <p>Заявка не является бронированием тура и не накладывает на Вас каких-либо обязательств</p>
         </div>
     </div>
-</div>
+</div><!-- Form end -->
 
 </div><!-- Bottom end -->
 
