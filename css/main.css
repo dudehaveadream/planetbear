@@ -77,6 +77,9 @@
 /* Reviews */
 /* block, none */
 /* none, fixed, scroll*/
+/* Detaild */
+/* block, none */
+/* none, fixed, scroll*/
 /* Base stuff */
 /* Reset */
 html, body, div, span, applet, object, iframe,
@@ -1247,6 +1250,7 @@ a:hover {
   background-position: center;
   background-attachment: none;
   padding: 50px 0 55px;
+  border-bottom: 4px dashed #d6d6d6;
 }
 .travel-reviews .title {
   margin-bottom: 45px;
@@ -1307,4 +1311,74 @@ a:hover {
   font-size: 17px;
   font-weight: 300;
   text-transform: none;
+}
+
+.travel-details {
+  display: block;
+  background-color: #ffffff;
+  background-image: url();
+  background-position: center;
+  background-attachment: none;
+  padding: 45px 0 25px;
+}
+.travel-details .title {
+  margin-bottom: 60px;
+}
+.travel-details .btn-holder {
+  text-align: center;
+}
+.travel-details .btn-holder a {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #00ff66;
+  text-decoration: underline;
+}
+.travel-details .btn-holder a:hover {
+  text-decoration: none;
+}
+.travel-details-inner .detail {
+  margin-bottom: 50px;
+}
+.travel-details-inner .detail h3 {
+  text-align: left;
+  letter-spacing: 2px;
+  margin-bottom: 35px;
+}
+.travel-details-inner .detail p {
+  font-size: 17px;
+  color: #4b4b4b;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+.travel-details-inner .detail p a {
+  font-weight: 600;
+  color: #17cb5f;
+  text-decoration: underline;
+}
+.travel-details-inner .detail p a:hover {
+  text-decoration: none;
+}
+.travel-details-inner .detail ul {
+  padding-left: 20px;
+}
+.travel-details-inner .detail ul li {
+  font-size: 17px;
+  color: #4b4b4b;
+  margin: 6px 0;
+  position: relative;
+}
+.travel-details-inner .detail ul li:before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -18px;
+  width: 8px;
+  height: 8px;
+  background: #00ff66;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
 }
