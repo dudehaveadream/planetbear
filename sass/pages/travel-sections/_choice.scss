@@ -1,0 +1,105 @@
+.travel-bottom {
+    display: $bottom-display;
+    background-color: $bottom-background-color;
+    background-image: $bottom-background-image;
+    background-position: $bottom-background-position;
+    background-attachment: $bottom-background-attachment;
+}
+
+.travel-choice {
+    display: $choice-display;
+    padding: 50px 0 45px;
+    .title {
+        margin-bottom: 65px;
+    }
+    &-inner {
+        @include clearfix;
+        .choice {
+            width: 33%;
+            float: left;
+            text-align: center;
+            border: 1px solid transparent;
+            padding: 20px;
+            @include transition (all, 0.3s, linear);
+            h3 {
+                text-transform: none;
+                margin-bottom: 25px;
+            }
+            .image-holder {
+                margin-bottom: 15px;
+                &-inner {
+                    display: inline-block;
+                    width: 156px;
+                    height: 156px;
+                    @include border-radius (50%);
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            p {
+                font-size: 15px;
+                color: #939393;
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            h4 {
+                span {
+                    display: inline-block;
+                    font-size: 22px;
+                    font-weight: $light;
+                    color: #585858;
+                    position: relative;
+                    &:before {
+                        content: '';
+                        width: 100%;
+                        height: 1px;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        background: #585858;
+                    }
+                }
+            }
+            h2 {
+                font-size: 32px;
+                margin-bottom: 10px;
+            }
+            .economy {
+                span {
+                    font-size: 15px;
+                    font-weight: $light;
+                    font-style: italic;
+                    color: #585858;
+                }
+            }
+            .btn-holder {
+                margin-top: 20px;
+                .btn-green {
+                    background: transparent;
+                    border: 3px solid $green-lighter;
+                    font-size: 15px;
+                    padding: 10px 40px;
+                    font-weight: $light;
+                    @include transition (all, 0.3s, linear);
+                }
+            }
+            &:hover {
+                border: 1px solid #cacaca;
+                .btn-holder {
+                    .btn-green {
+                        background: $green-lighter;
+                        border-color: transparent;
+                        border-bottom: 3px solid #46b571;
+                        font-weight: $bold;
+                    }
+                }
+            }
+            &.centred {
+                margin-top: -48px;
+            }
+        }
+    }
+}

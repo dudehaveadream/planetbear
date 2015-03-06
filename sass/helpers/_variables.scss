@@ -115,9 +115,18 @@ $details-background-image: url();
 $details-background-position: center;
 $details-background-attachment: none; /* none, fixed, scroll*/
 
+/* Bottom */
+$bottom-display: block; /* block, none */
+$bottom-background-color: none;
+$bottom-background-image: url(../img/bg/bottom_bg.jpg);
+$bottom-background-position: center;
+$bottom-background-attachment: none; /* none, fixed, scroll*/
+.travel-bottom {
+    @include background-size (cover);
+}
 
-
-
+/* Choice */
+$choice-display: block; /* block, none */
 
 
 
