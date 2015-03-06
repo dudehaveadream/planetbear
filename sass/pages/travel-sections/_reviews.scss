@@ -1,0 +1,65 @@
+.travel-reviews {
+    display: $reviews-display;
+    background-color: $reviews-background-color;
+    background-image: $reviews-background-image;
+    background-position: $reviews-background-position;
+    background-attachment: $reviews-background-attachment;
+    padding: 50px 0 55px;
+    .title {
+        margin-bottom: 45px;
+    }
+    .btn-holder {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &-inner {
+        width: 682px;
+        margin: auto;
+        .subtitle {
+            font-size: 16px;
+            font-weight: $light;
+            color: #7a7a7a;
+            line-height: 1.2;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .review {
+            margin-bottom: 30px;
+            padding: 25px 35px 20px 135px;
+            position: relative;
+            border: 4px solid $green-lighter;
+            .avatar {
+                width: 156px;
+                height: 156px;
+                position: absolute;
+                top: 50%;
+                left: -78px;
+                margin-top: -78px;
+                @include border-radius (50%);
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            h4 {
+                text-align: left;
+                font-size: 17px;
+                margin-bottom: 30px;
+                letter-spacing: 1px;
+            }
+            p {
+                font-size: 17px;
+                font-weight: $light;
+                color: #838383;
+                line-height: 1.2;
+                margin-bottom: 35px;
+            }
+            h5 {
+                text-align: right;
+                font-size: 17px;
+                font-weight: $light;
+                text-transform: none;
+            }
+        }
+    }
+}
