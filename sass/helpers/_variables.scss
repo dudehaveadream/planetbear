@@ -70,6 +70,13 @@ $firstinvite-left-image: url(../img/monk.png);
     @include background-size (cover);
 }
 
+/* Route */
+$route-display: block; /* block, none */
+$route-background-color: $white;
+$route-background-image: url();
+$route-background-position: center;
+$route-background-attachment: none; /* none, fixed, scroll*/
+
 /* Secondinvite */
 $secondinvite-display: block; /* block, none */
 $secondinvite-background-color: none;
