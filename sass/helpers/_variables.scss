@@ -18,7 +18,7 @@ $green-lighter: #00ff66;
 /* Video */
 $head-display: block; /* block, none */
 $head-background-color: none;
-$head-background-image: url(../img/bg/head_bg.jpg);
+$head-background-image: url();
 $head-background-position: center;
 $head-background-attachment: none; /* none, fixed, scroll*/
 .travel-head {
@@ -51,6 +51,7 @@ $result-background-attachment: none; /* none, fixed, scroll*/
 .travel-result {
     @include background-size (cover);
 }
+$result-border-color: #17cb5f;
 
 /* Gallery */
 $gallery-display: block; /* block, none */

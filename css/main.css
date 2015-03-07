@@ -407,6 +407,16 @@ input[type="text"]:focus {
   -ms-transition: all 0.4s linear;
   -o-transition: all 0.4s linear;
   transition: all 0.4s linear;
+  border-bottom: 1px solid transparent;
+}
+.header-visible .page-nav li a:hover {
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+}
+.header-visible .page-nav li.active a {
+  color: #00ff66;
+  border-bottom: 1px solid transparent;
+  font-weight: 300;
 }
 .header-callback {
   float: right;
@@ -666,7 +676,7 @@ input[type="text"]:focus {
 .travel-head {
   display: block;
   background-color: none;
-  background-image: url(../img/bg/head_bg.jpg);
+  background-image: url();
   background-position: center;
   background-attachment: none;
 }
