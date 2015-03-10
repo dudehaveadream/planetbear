@@ -67,6 +67,9 @@
 /* Numbers */
 /* block, none */
 /* none, fixed, scroll*/
+/* Map */
+/* block, none */
+/* none, fixed, scroll*/
 /* Author */
 /* block, none */
 /* none, fixed, scroll*/
@@ -1357,6 +1360,134 @@ input[type="text"]:focus {
 }
 .travel-numbers .number-fourth img {
   margin-bottom: 10px;
+}
+
+.travel-map {
+  display: block;
+  background-color: none;
+  background-image: url(../img/bg/map_bg.png);
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: none;
+  padding: 45px 0 30px;
+}
+.travel-map-inner {
+  width: 800px;
+  margin: auto;
+  position: relative;
+}
+.travel-map .town {
+  position: absolute;
+}
+.travel-map .town-image {
+  width: 82px;
+  height: 55px;
+  border: 3px solid #ffffff;
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.9);
+}
+.travel-map .town-image img {
+  width: 100%;
+  height: 100%;
+}
+.travel-map .town-name {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.3);
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 2px 4px;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+.travel-map .town.town1 {
+  right: 15px;
+  top: 110px;
+}
+.travel-map .town.town2 {
+  right: 245px;
+  top: 85px;
+}
+.travel-map .town.town3 {
+  right: 350px;
+  top: 250px;
+}
+.travel-map .town.town3 .town-name {
+  position: absolute;
+  right: 100%;
+  top: 15px;
+  margin: 0;
+  right: 110%;
+}
+.travel-map .town.town4 {
+  left: 25px;
+  top: 190px;
+}
+.travel-map .way {
+  position: absolute;
+}
+.travel-map .way.way1 {
+  top: 160px;
+  right: 120px;
+}
+.travel-map .way.way2 {
+  top: 150px;
+  right: 330px;
+}
+.travel-map .way.way3 {
+  left: 27px;
+  top: 278px;
+}
+.travel-map .transport {
+  position: absolute;
+}
+.travel-map .transport.transport1 {
+  right: 120px;
+  top: 160px;
+}
+.travel-map .transport.transport2 {
+  left: 195px;
+  top: 265px;
+}
+.travel-map .transport-text {
+  position: absolute;
+  font-size: 15px;
+  font-weight: 15px;
+  color: #ffffff;
+}
+.travel-map .transport-text:before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 1px;
+  background: #ffffff;
+}
+.travel-map .transport-text.transport-text1 {
+  right: 150px;
+  top: 250px;
+}
+.travel-map .transport-text.transport-text1:before {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: -35px;
+  left: 40px;
+}
+.travel-map .transport-text.transport-text2 {
+  left: 320px;
+  top: 350px;
+}
+.travel-map .transport-text.transport-text2:before {
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+  top: -20px;
+  right: 101%;
 }
 
 .travel-author {

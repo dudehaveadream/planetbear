@@ -1,0 +1,117 @@
+.travel-map {
+    display: $map-display;
+    background-color: $map-background-color;
+    background-image: $map-background-image;
+    background-repeat: $map-background-repeat;
+    background-position: $map-background-position;
+    background-attachment: $map-background-attachment;
+    padding: 45px 0 30px;
+    &-inner {
+        width: 800px;
+        margin: auto;
+        position: relative;
+    }
+    .town {
+        position: absolute;
+        &-image {
+            width: 82px;
+            height: 55px;
+            border: 3px solid $white;
+            @include box-shadow (0 0 5px 1px rgba(0,0,0,.9));
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-name {
+            display: inline-block;
+            background: rgba(255,255,255,.3);
+            font-size: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 2px 4px;
+            margin-top: 5px;
+            letter-spacing: 1px;
+        }
+        &.town1 {
+            right: 15px;
+            top: 110px;
+        }
+        &.town2 {
+            right: 245px;
+            top: 85px;
+        }
+        &.town3 {
+            right: 350px;
+            top: 250px;
+            .town-name {
+                position: absolute;
+                right: 100%;
+                top: 15px;
+                margin: 0;
+                right: 110%;
+            }
+        }
+        &.town4 {
+            left: 25px;
+            top: 190px;
+        }
+    }
+    .way {
+        position: absolute;
+        &.way1 {
+            top: 160px;
+            right: 120px;
+        }
+        &.way2 {
+            top: 150px;
+            right: 330px;
+        }
+        &.way3 {
+            left: 27px;
+            top: 278px;
+        }
+    }
+    .transport {
+        position: absolute;
+        &.transport1 {
+            right: 120px;
+            top: 160px;
+        }
+        &.transport2 {
+            left: 195px;
+            top: 265px;
+        }
+    }
+    .transport-text {
+        position: absolute;
+        font-size: 15px;
+        font-weight: 15px;
+        color: $white;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 1px;
+            background: $white;
+        }
+        &.transport-text1 {
+            right: 150px;
+            top: 250px;
+            &:before {
+                @include rotate (-45);
+                top: -35px;
+                left: 40px;
+            }
+        }
+        &.transport-text2 {
+            left: 320px;
+            top: 350px;
+            &:before {
+                @include rotate (30);
+                top: -20px;
+                right: 101%;
+            }
+        }
+    }
+}

@@ -96,6 +96,14 @@ $numbers-background-image: url();
 $numbers-background-position: center;
 $numbers-background-attachment: none; /* none, fixed, scroll*/
 
+/* Map */
+$map-display: block; /* block, none */
+$map-background-color: none;
+$map-background-image: url(../img/bg/map_bg.png);
+$map-background-repeat: repeat;
+$map-background-position: center;
+$map-background-attachment: none; /* none, fixed, scroll*/
+
 /* Author */
 $author-display: block; /* block, none */
 $author-background-color: none;
