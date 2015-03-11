@@ -8,13 +8,15 @@
 
     <!-- Styles -->
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/selectordie.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/wow.js" type="text/javascript"></script>
     <script src="js/custom.js" type="text/javascript"></script>
+    <script src="js/selectordie.min.js" type="text/javascript"></script>
     <script>
         $(document).ready(function(){
             wow = new WOW(
@@ -27,16 +29,18 @@
               }
             );
             wow.init();
+
+            $('.header-main .header-categories select').selectOrDie();
         });
     </script>
 
 </head>
 <body>
 
-<div class="section header">
+<div class="section header header-main">
     <div class="container">
+        <div class="header-top">
         <a href="#" class="header-logo">
-            <img src="img/logo_white.png" alt="" class="big-logo">
             <img src="img/logo_small.png" alt="" class="small-logo">
         </a>
         <div class="header-inner">
@@ -48,23 +52,49 @@
                 <li><a href="#">БЛОГ</a></li>
                 <li><a href="#">Контакты</a></li>
             </ul>
-            <div class="header-visible">
-                <ul class="page-nav">
-                    <li><a href="#goActivity">О путешествии</a></li>
-                    <li><a href="#goRoute">Программа</a></li>
-                    <li><a href="#goMap">Карта</a></li>
-                    <li><a href="#goReviews">Отзывы</a></li>
-                    <li><a href="#goDetails">Детали</a></li>
-                    <li><a href="#goQuestions">Вопросы</a></li>
-                </ul>
-                <div class="header-callback">
-                    <div class="phone">
-                        <h5>+7 (926) 521 07 79</h5>
-                        <a href="#">Вам перезвонить?</a>
-                    </div>
-                    <a href="#" class="btn-green btn-unknow">узнать<br>подробности</a>
-                    <a href="#" class="btn-green">оставить<br>заявку</a>
+        </div>
+        </div>
+        <div class="header-visible">
+            <div class="header-categories">
+                <div class="header-categories-section">
+                    <label>Направление:</label>
+                    <select>
+                        <option>Северная Америка</option>
+                        <option>Южная Америка</option>
+                        <option>Африка</option>
+                    </select>
                 </div>
+                <div class="header-categories-section">
+                    <label>Участники:</label>
+                    <select>
+                        <option>Русская группа</option>
+                        <option>Русская группа 2</option>
+                        <option>Русская группа 3</option>
+                    </select>
+                </div>
+                <div class="header-categories-section">
+                    <label>Формат:</label>
+                    <select>
+                        <option>Экспедиция</option>
+                        <option>Путешествие</option>
+                    </select>
+                </div>
+                <div class="header-categories-section">
+                    <label>Стоимость:</label>
+                    <select>
+                        <option>до 1 200 000 руб</option>
+                        <option>до 900 000 руб</option>
+                        <option>до 700 000 руб</option>
+                        <option>до 400 000 руб</option>
+                    </select>
+                </div>
+            </div>
+            <div class="header-callback">
+                <div class="phone">
+                    <h5>+7 (926) 521 07 79</h5>
+                    <a href="#">Вам перезвонить?</a>
+                </div>
+                <a href="#" class="btn-green">оставить<br>заявку</a>
             </div>
         </div>
     </div>
