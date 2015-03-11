@@ -1,5 +1,5 @@
 .main-travel {
-    padding: 35px 0 115px;
+    padding: 150px 0 115px;
     background: url(../img/bg/main_bg.jpg);
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -12,10 +12,23 @@
     h1 {
         margin: 15px 0 55px;
     }
+    .travels-text {
+        text-align: center;
+        margin-top: 50px;
+        h5 {
+            font-size: 17px;
+            margin-bottom: 25px;
+        }
+        p {
+            font-size: 17px;
+            margin-bottom: 15px;
+        }
+    }
     .travels {
         @include clearfix;
         padding: 0 10px;
         &-item {
+            background: $white;
             width: 295px;
             float: left;
             margin-right: 27px;
@@ -24,18 +37,22 @@
             &:nth-child(3n+3) {
                 margin-right: 0;
             }
-            &-info {
-                padding: 15px;
-                background: $white;
-                text-align: center;
-                min-height: 217px;
+            &-name {
+                padding: 10px 15px;
                 h5 {
                     padding: 0 10px;
-                    margin-bottom: 20px;
                     letter-spacing: 1px;
-                    span {
-                        color: $green-darken;
+                    line-height: 1.2;
+                    span.grand {
+                        font-weight: $bold;
                     }
+                }
+            }
+            &-info {
+                padding: 25px 15px 15px;
+                text-align: center;
+                .info-bottom {
+                    @include clearfix;
                 }
                 p.descrip {
                     font-size: 14px;
@@ -47,17 +64,19 @@
                     font-weight: $light;
                     font-style: italic;
                     color: #919191;
-                    margin-bottom: 20px;
+                    float: left;
+                    padding-top: 15px;
                 }
                 p.summ {
                     font-size: 19px;
-                    font-weight: $light;
-                    color: #919191;
+                    color: #58bfd0;
+                    text-transform: uppercase;
+                    float: right;
                     span {
                         font-size: 31px;
                         font-weight: $bold;
-                        color: $green-lighter;
-                        margin-left: 10px;
+                        color: $black;
+                        margin-left: 5px;
                         margin-right: 5px;
                     }
                 }
@@ -73,7 +92,7 @@
                 }
                 .btn-holder {
                     position: absolute;
-                    top: 80px;
+                    top: 95px;
                     left: 0;
                     width: 100%;
                     text-align: center;
@@ -82,7 +101,7 @@
                 }
                 .location {
                     position: absolute;
-                    bottom: 10px;
+                    bottom: -8px;
                     left: 0;
                     width: 100%;
                     text-align: center;
@@ -92,23 +111,21 @@
                         font-weight: $light;
                         padding: 2px 8px;
                         letter-spacing: 1px;
+                        color: $white;
                     }
                     &.orange {
                         span {
                             background: #f7c570;
-                            color: #8c5d0d;
                         }
                     }
                     &.blue {
                         span {
                             background: #9ab1d7;
-                            color: #235dad;
                         }
                     }
                     &.green {
                         span {
                             background: #7cad04;
-                            color: #285706;
                         }
                     }
                 }

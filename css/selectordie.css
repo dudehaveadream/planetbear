@@ -70,9 +70,9 @@
 
         .sod_select.open { color: #919191; }
         .sod_select.focus {
-            -webkit-box-shadow: 0 0 5px 1px #00ff66;
-            -moz-box-shadow: 0 0 5px 1px #00ff66;
-            box-shadow: 0 0 5px 1px #00ff66;
+            -webkit-box-shadow: 0 0 5px 1px #7ce1c6;
+            -moz-box-shadow: 0 0 5px 1px #7ce1c6;
+            box-shadow: 0 0 5px 1px #7ce1c6;
         }
 
     /* When the entire SoD is disabled, go crazy! */

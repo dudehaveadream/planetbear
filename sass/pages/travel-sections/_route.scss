@@ -12,9 +12,6 @@
         background: #ededed;
         font-weight: $medium;
         padding: 22px 0;
-        span {
-            color: #5bce84;
-        }
     }
     &-days {
         .day {
@@ -29,10 +26,6 @@
                         position: absolute;
                         bottom: 0;
                     }
-                }
-                span {
-                    font-weight: $medium;
-                    color: #30c366;
                 }
             }
             p {

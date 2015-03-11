@@ -14,10 +14,10 @@
     }
     .btn-holder {
         text-align: center;
-        margin-top: 40px;
     }
     &-inner {
         @include clearfix;
+        margin-bottom: 3px;
     }
     &-item {
         float: left;

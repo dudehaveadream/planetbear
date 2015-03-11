@@ -1,14 +1,10 @@
 .footer {
     padding: 10px 0;
-    background: $black;
+    background: #222c39;
     &-top {
         @include clearfix;
         .footer-logo {
             float: left;
-            img {
-                height: 71px;
-                width: 71px;
-            }
         }
         .footer-nav {
             float: right;
@@ -24,8 +20,8 @@
                     letter-spacing: 1px;
                     @include transition (all, .4s, linear);
                 }
-                &.active a {
-                    color: $green-lighter;
+                &.active a, &:hover a {
+                    color: #7ce1c6;
                 }
             }
         }

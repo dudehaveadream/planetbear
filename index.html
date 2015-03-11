@@ -14,6 +14,7 @@
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/wow.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
     <script>
         $(document).ready(function(){
             wow = new WOW(
@@ -32,14 +33,54 @@
 </head>
 <body>
 
+<div class="section header">
+    <div class="container">
+        <a href="#" class="header-logo">
+            <img src="img/logo_white.png" alt="" class="big-logo">
+            <img src="img/logo_small.png" alt="" class="small-logo">
+        </a>
+        <div class="header-inner">
+            <ul class="header-nav">
+                <li class="active"><a href="#">ПУТЕШЕСТВИЯ</a></li>
+                <li><a href="#">агентствам</a></li>
+                <li><a href="#">группам</a></li>
+                <li><a href="#">почему у нас нет офиса?</a></li>
+                <li><a href="#">БЛОГ</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="header-visible">
+                <ul class="page-nav">
+                    <li><a href="#goActivity">О путешествии</a></li>
+                    <li><a href="#goRoute">Программа</a></li>
+                    <li><a href="#goMap">Карта</a></li>
+                    <li><a href="#goReviews">Отзывы</a></li>
+                    <li><a href="#goDetails">Детали</a></li>
+                    <li><a href="#goQuestions">Вопросы</a></li>
+                </ul>
+                <div class="header-callback">
+                    <div class="phone">
+                        <h5>+7 (926) 521 07 79</h5>
+                        <a href="#">Вам перезвонить?</a>
+                    </div>
+                    <a href="#" class="btn-green btn-unknow">узнать<br>подробности</a>
+                    <a href="#" class="btn-green">оставить<br>заявку</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- Header end -->
+
 <div class="section main-travel">
     <div class="container">
         <div class="logo-holder">
-            <a href="#" class="logo"><img src="img/logo.png"></a>
+            <a href="#" class="logo"><img src="img/logo_black.png"></a>
         </div>
         <h1>авторские путешествия</h1>
         <div class="travels">
             <div class="travels-item wow fadeInLeft" data-wow-delay="300ms">
+                <div class="travels-item-name">
+                    <h5>сердце <span class="grand">бали</span> и парусный тур по островам <span class="grand">комодо</span></h5>
+                </div>
                 <a href="#">
                     <div class="img-holder">
                         <img src="img/travels/1.jpg" alt="">
@@ -48,13 +89,17 @@
                     </div>
                 </a>
                 <div class="travels-item-info">
-                    <h5>сердце <span>бали</span> и парусный тур по островам <span>комодо</span></h5>
                     <p class="descrip">Глубокомысленное путешествие по самым красивым местам Индонезии</p>
-                    <p class="days">14+7 дней</p>
-                    <p class="summ">от <span>323 845</span> руб</p>
+                    <div class="info-bottom">
+                        <p class="days">14+7 дней</p>
+                        <p class="summ">от <span>323 845</span>P</p>
+                    </div>
                 </div>
             </div>
             <div class="travels-item wow fadeInLeft" data-wow-delay="600ms">
+                <div class="travels-item-name">
+                    <h5>экспедиция <br> к берегам <span class="grand">антарктиды</span></h5>
+                </div>
                 <a href="#">
                     <div class="img-holder">
                         <img src="img/travels/2.jpg" alt="">
@@ -63,13 +108,17 @@
                     </div>
                 </a>
                 <div class="travels-item-info">
-                    <h5>экспедиция <br> к берегам <span>антарктиды</span></h5>
                     <p class="descrip">Глубокомысленное путешествие по самым красивым местам Индонезии</p>
-                    <p class="days">14+7 дней</p>
-                    <p class="summ">от <span>3 123 845</span> руб</p>
+                    <div class="info-bottom">
+                        <p class="days">14+7 дней</p>
+                        <p class="summ">от <span>3 123 845</span>P</p>
+                    </div>
                 </div>
             </div>
             <div class="travels-item wow fadeInLeft" data-wow-delay="900ms">
+                <div class="travels-item-name">
+                    <h5>тайны майя <br> и шаманизм <br> в <span class="grand">перу</span></span></h5>
+                </div>
                 <a href="#">
                     <div class="img-holder">
                         <img src="img/travels/3.jpg" alt="">
@@ -78,13 +127,17 @@
                     </div>
                 </a>
                 <div class="travels-item-info">
-                    <h5>тайны майя <br> и шаманизм <br> в <span>перу</span></h5>
                     <p class="descrip">Глубокомысленное путешествие по самым красивым местам Индонезии</p>
-                    <p class="days">14+7 дней</p>
-                    <p class="summ">от <span>323 845</span> руб</p>
+                    <div class="info-bottom">
+                        <p class="days">14+7 дней</p>
+                        <p class="summ">от <span>323 845</span>P</p>
+                    </div>
                 </div>
             </div>
             <div class="travels-item wow fadeInLeft" data-wow-delay="1200ms">
+                <div class="travels-item-name">
+                    <h5>сердце <span class="grand">бали</span> и парусный тур по островам <span class="grand">комодо</span></h5>
+                </div>
                 <a href="#">
                     <div class="img-holder">
                         <img src="img/travels/1.jpg" alt="">
@@ -93,13 +146,17 @@
                     </div>
                 </a>
                 <div class="travels-item-info">
-                    <h5>сердце <span>бали</span> и парусный тур по островам <span>комодо</span></h5>
                     <p class="descrip">Глубокомысленное путешествие по самым красивым местам Индонезии</p>
-                    <p class="days">14+7 дней</p>
-                    <p class="summ">от <span>323 845</span> руб</p>
+                    <div class="info-bottom">
+                        <p class="days">14+7 дней</p>
+                        <p class="summ">от <span>323 845</span>P</p>
+                    </div>
                 </div>
             </div>
             <div class="travels-item wow fadeInLeft" data-wow-delay="1500ms">
+                <div class="travels-item-name">
+                    <h5>экспедиция <br> к берегам <span class="grand">антарктиды</span></h5>
+                </div>
                 <a href="#">
                     <div class="img-holder">
                         <img src="img/travels/2.jpg" alt="">
@@ -108,13 +165,17 @@
                     </div>
                 </a>
                 <div class="travels-item-info">
-                    <h5>экспедиция <br> к берегам <span>антарктиды</span></h5>
                     <p class="descrip">Глубокомысленное путешествие по самым красивым местам Индонезии</p>
-                    <p class="days">14+7 дней</p>
-                    <p class="summ">от <span>3 123 845</span> руб</p>
+                    <div class="info-bottom">
+                        <p class="days">14+7 дней</p>
+                        <p class="summ">от <span>3 123 845</span>P</p>
+                    </div>
                 </div>
             </div>
             <div class="travels-item wow fadeInLeft" data-wow-delay="1800ms">
+                <div class="travels-item-name">
+                    <h5>тайны майя <br> и шаманизм <br> в <span class="grand">перу</span></span></h5>
+                </div>
                 <a href="#">
                     <div class="img-holder">
                         <img src="img/travels/3.jpg" alt="">
@@ -123,12 +184,18 @@
                     </div>
                 </a>
                 <div class="travels-item-info">
-                    <h5>тайны майя <br> и шаманизм <br> в <span>перу</span></h5>
                     <p class="descrip">Глубокомысленное путешествие по самым красивым местам Индонезии</p>
-                    <p class="days">14+7 дней</p>
-                    <p class="summ">от <span>323 845</span> руб</p>
+                    <div class="info-bottom">
+                        <p class="days">14+7 дней</p>
+                        <p class="summ">от <span>323 845</span>P</p>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="travels-text">
+            <h5>не нашли того путешествия, которого хотите?</h5>
+            <p>Обратитесь к нам, и мы придумаем <br> для Вас что-нибудь новенькое</p>
+            <div class="btn-holder"><a href="#" class="btn-green">оставить<br>заявку</a></div>
         </div>
     </div>
 </div><!-- Content end -->
@@ -136,7 +203,7 @@
 <div class="section footer">
     <div class="container">
         <div class="footer-top">
-            <a href="#" class="footer-logo"><img src="img/logo_green.png" alt=""></a>
+            <a href="#" class="footer-logo"><img src="img/logo_white.png" alt=""></a>
             <ul class="footer-nav">
                 <li><a href="#">ПУТЕШЕСТВИЯ</a></li>
                 <li><a href="#">почему у нас нет офиса?</a></li>

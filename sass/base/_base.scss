@@ -8,6 +8,7 @@
 }
 body {
     font-family: $main-font;
+    color: #141d2a;
 }
 h1,h2,h3,h4,h5 {
     font-weight: $bold;
@@ -47,6 +48,10 @@ a {
         color: $green-lighter;
     }
 }
+span.grand {
+    color: #58bfd0;
+    font-weight: $medium;
+}
 .section {
     min-width: $container-width;
     overflow: hidden;
@@ -83,38 +88,34 @@ input[type="text"] {
     color: $white;
 }
 
-.btn-transparent {
-    display: inline-block;
-    font-size: 12px;
-    font-weight: $light;
-    color: $green-lighter;
-    text-transform: uppercase;
-    border: 3px solid $green-lighter;
-    padding: 5px;
-    line-height: 1.3;
-    letter-spacing: 1px;
-    @include transition (all, 0.4s, linear);
-    &:hover {
-        @include box-shadow (0 0 3px 1px rgba(255,255,255,.7));
-        text-shadow: 1px 1px 3px rgba(255,255,255,.7);
-    }
-}
 
 .btn-green {
     display: inline-block;
-    background: $green-lighter;
+    background: #e65332;
+    background: -moz-linear-gradient(top, #88f7bb 0%, #74daca 100%);
+    background: -webkit-linear-gradient(top, #88f7bb 0%, #74daca 100%);
+    background: -o-linear-gradient(top, #88f7bb 0%, #74daca 100%);
+    background: -ms-linear-gradient(top, #88f7bb 0%, #74daca 100%);
+    background: linear-gradient(top, #88f7bb 0%, #74daca 100%);
     font-size: 16px;
     font-weight: $bold;
     color: #006b2b;
     text-transform: uppercase;
     text-align: center;
     padding: 10px 35px;
-    border-bottom: 5px solid #1c7965;
+    border-bottom: 5px solid #1d8b8b;
     letter-spacing: 1px;
     @include transition (all, 0.4s, linear);
     &:hover {
         color: #006b2b;
-        @include box-shadow (inset 0 0 13px 3px $white);
+        @include box-shadow (inset 0 0 10px 2px $white);
+    }
+    &:active {
+        background: -moz-linear-gradient(top, #74daca 0%, #88f7bb 100%);
+        background: -webkit-linear-gradient(top, #74daca 0%, #88f7bb 100%);
+        background: -o-linear-gradient(top, #74daca 0%, #88f7bb 100%);
+        background: -ms-linear-gradient(top, #74daca 0%, #88f7bb 100%);
+        background: linear-gradient(top, #74daca 0%, #88f7bb 100%);
     }
 }
 .btn-green.rounded {
