@@ -10,6 +10,7 @@
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/selectordie.css" />
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
 
     <!-- Scripts -->
@@ -17,6 +18,7 @@
     <script src="js/wow.js" type="text/javascript"></script>
     <script src="js/custom.js" type="text/javascript"></script>
     <script src="js/selectordie.min.js" type="text/javascript"></script>
+    <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
     <script>
         $(document).ready(function(){
             wow = new WOW(
@@ -31,6 +33,7 @@
             wow.init();
 
             $('.header-main .header-categories select').selectOrDie();
+
         });
     </script>
 
@@ -89,12 +92,12 @@
                     </select>
                 </div>
             </div>
-            <div class="header-callback">
+            <div class="header-callback holder-popups">
                 <div class="phone">
                     <h5>+7 (926) 521 07 79</h5>
-                    <a href="#">Вам перезвонить?</a>
+                    <a href="#callback-popup" data-effect="mfp-zoom-in">Вам перезвонить?</a>
                 </div>
-                <a href="#" class="btn-green">оставить<br>заявку</a>
+                <a href="#request-popup" class="btn-green" data-effect="mfp-zoom-in">оставить<br>заявку</a>
             </div>
         </div>
     </div>
@@ -225,7 +228,7 @@
         <div class="travels-text">
             <h5>не нашли того путешествия, которого хотите?</h5>
             <p>Обратитесь к нам, и мы придумаем <br> для Вас что-нибудь новенькое</p>
-            <div class="btn-holder"><a href="#" class="btn-green">оставить<br>заявку</a></div>
+            <div class="btn-holder holder-popups"><a href="#request-popup" class="btn-green" data-effect="mfp-zoom-in">оставить<br>заявку</a></div>
         </div>
     </div>
 </div><!-- Content end -->
@@ -248,6 +251,54 @@
         </div>
     </div>
 </div><!-- Footer end -->
+
+<!-- Popup's -->
+<div id="request-popup" class="main-popup mfp-with-anim mfp-hide">
+    <h2 class="title"><span>хотите попасть</span>в путешествие?</h2>
+    <form>
+        <h5>заполните форму</h5>
+        <input type="text" placeholder="Введите имя">
+        <input type="text" placeholder="Введите email">
+        <input type="text" placeholder="Введите телефон">
+        <div class="btn-holder">
+            <a href="#" class="btn-green">оставить<br>заявку</a>
+        </div>
+    </form>
+    <p class="manager">Наш менеджер перезвонит Вам <br> и поможет решить задачу</p>
+</div>
+
+<div id="callback-popup" class="main-popup mfp-with-anim mfp-hide">
+    <h2 class="title"><span>хотите, чтобы</span>ВАМ ПЕРЕЗВОНИЛИ?</h2>
+    <form>
+        <h5>заполните форму</h5>
+        <input type="text" placeholder="Введите имя">
+        <input type="text" placeholder="Введите email">
+        <input type="text" placeholder="Введите телефон">
+        <div class="btn-holder">
+            <a href="#" class="btn-green">перезвоните<br>мне</a>
+        </div>
+    </form>
+    <p class="manager">Наш менеджер перезвонит Вам <br> и поможет решить задачу</p>
+</div>
+
+<div id="details-popup" class="main-popup mfp-with-anim mfp-hide">
+    <h2 class="title"><span>хотите узнать</span>подробности?</h2>
+    <form>
+        <h5>заполните форму</h5>
+        <input type="text" placeholder="Введите имя">
+        <input type="text" placeholder="Введите email">
+        <input type="text" placeholder="Введите телефон">
+        <div class="btn-holder">
+            <a href="#" class="btn-green">узнать<br>подробности</a>
+        </div>
+    </form>
+    <p class="manager">Наш менеджер перезвонит Вам <br> и поможет решить задачу</p>
+</div>
+
+<div id="notification-popup" class="nobg-popup mfp-with-anim mfp-hide">
+    <h2 class="title"><span>спасибо, что</span>обратились к нам!</h2>
+    <p>Наш менеджер перезвонит Вам в течение 30 минут <br>(в рабочее время по МСК)</p>
+</div>
 
 </body>
 </html>

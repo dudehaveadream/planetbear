@@ -157,8 +157,6 @@
 }
 .header-main {
     overflow: visible;
-    .header-nav {
-    }
     .header-logo {
         height: 52px;
     }
@@ -195,9 +193,9 @@
             font-size: 14px;
             padding: 2px 0;
             border: none;
-            color: #58bfd0;
+            color: #7ce1c6;
             width: auto;
-            border-bottom: 1px dashed #58bfd0;
+            border-bottom: 1px dashed #7ce1c6;
             &:after {
                 content: '';
             }

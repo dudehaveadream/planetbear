@@ -1,0 +1,102 @@
+.main-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width:auto;
+  max-width: 305px;
+  margin: 0 auto;
+  .title {
+    position: absolute;
+    bottom: 100%;
+    left: -15%;
+    width: 130%;
+    color: #ffffff;
+    padding-bottom: 25px;
+  }
+  .manager {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    font-weight: $light;
+    color: #ffffff;
+    padding-top: 20px;
+    line-height: 1.2;
+  }
+    h5 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    input {
+        margin-bottom: 8px;
+    }
+    .btn-holder {
+        margin-top: 15px;
+        text-align: center;
+    }
+}
+
+.nobg-popup  {
+    position: relative;
+    width:auto;
+    max-width: 410px;
+    margin: 0 auto;
+    text-align: center;
+    .title {
+        color: #ffffff;
+        margin-bottom: 32px;
+    }
+    p {
+        font-size: 15px;
+        font-weight: $light;
+        color: #ffffff;
+        line-height: 1.2;
+    }
+    .mfp-close {
+        margin-top: 30px;
+        top: 100%;
+        right: 250px;
+    }
+}
+
+.mfp-zoom-in {
+
+  /* start state */
+  .mfp-with-anim {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.8);
+  }
+
+  &.mfp-bg {
+    opacity: 0;
+      transition: all 0.3s ease-out;
+  }
+
+  /* animate in */
+  &.mfp-ready {
+    .mfp-with-anim {
+      opacity: 1;
+      transform: scale(1);
+    }
+    &.mfp-bg {
+      opacity: 0.9;
+    }
+  }
+
+  /* animate out */
+  &.mfp-removing {
+
+    .mfp-with-anim {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    &.mfp-bg {
+      opacity: 0;
+    }
+
+  }
+
+}
