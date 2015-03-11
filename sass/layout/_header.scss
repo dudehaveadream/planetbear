@@ -128,9 +128,31 @@
             vertical-align: middle;
             margin-left: 5px;
             font-size: 12px;
-    padding: 8px 5px;
-    line-height: 1.3;
-    text-align: left;
+            padding: 6px 8px;
+            line-height: 1.3;
+            color: #7ce1c6;
+            background: transparent;
+            text-align: left;
+            border-top: 3px solid #88f7bb;
+            border-bottom: 3px solid #74daca;
+            background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#88f7bb), to(#74daca));
+            background-image: -webkit-linear-gradient(#88f7bb, #74daca);
+            background-image:
+                -moz-linear-gradient(#88f7bb, #74daca),
+                -moz-linear-gradient(#88f7bb, #74daca)
+            ;
+            background-image:
+                -o-linear-gradient(#88f7bb, #74daca),
+                -o-linear-gradient(#88f7bb, #74daca)
+            ;
+            background-image:
+                linear-gradient(#88f7bb, #74daca),
+                linear-gradient(#88f7bb, #74daca)
+            ;
+            -moz-background-size:3px 100%;
+            background-size:3px 100%;
+            background-position:0 0, 100% 0;
+            background-repeat:no-repeat;
         }
     }
 }

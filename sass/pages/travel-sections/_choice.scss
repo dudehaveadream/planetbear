@@ -78,22 +78,11 @@
             .btn-holder {
                 margin-top: 20px;
                 .btn-green {
-                    background: transparent;
-                    border: 3px solid $green-lighter;
-                    font-size: 15px;
-                    padding: 10px 40px;
-                    @include transition (all, 0.3s, linear);
+                    border-width: 3px;
                 }
             }
             &:hover {
                 border: 1px solid #cacaca;
-                .btn-holder {
-                    .btn-green {
-                        background: $green-lighter;
-                        border-color: transparent;
-                        border-bottom: 3px solid #1d8b8b;
-                    }
-                }
             }
             &.centred {
                 margin-top: -48px;
