@@ -170,6 +170,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-repeat: no-repeat;
 }
 
+video {
+  width: 100% !important;
+}
+.videoBG,
+.videoBG_wrapper {
+   width: 100% !important;
+   height: 100% !important;
+}
+
 body {
   font-family: "Ubuntu", sans-serif;
   color: #141d2a;
@@ -312,10 +321,9 @@ input[type="text"]:focus {
 
 /* Layout related stylesheets* */
 .header {
-  position: fixed;
   width: 100%;
   background: #222c39;
-  padding: 10px 0;
+  padding: 5px 0;
   z-index: 100;
 }
 .header .container:after {
@@ -329,7 +337,7 @@ input[type="text"]:focus {
   width: 125px;
   outline: none;
   position: relative;
-  height: 80px;
+  height: 66px;
 }
 .header-logo img {
   -webkit-transition: all 0.4s linear;
@@ -342,8 +350,7 @@ input[type="text"]:focus {
   top: 0;
 }
 .header-logo img.big-logo {
-  width: 121px;
-  height: 80px;
+  width: 95px;
   opacity: 1;
   margin-left: -60px;
 }
@@ -364,6 +371,7 @@ input[type="text"]:focus {
   -ms-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  text-align: right;
 }
 .header-nav li {
   display: inline-block;
@@ -388,7 +396,7 @@ input[type="text"]:focus {
 }
 .header-visible {
   width: 100%;
-  padding-top: 20px;
+  padding-top: 10px;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
@@ -491,7 +499,10 @@ input[type="text"]:focus {
   background-repeat: no-repeat;
 }
 
-.header.sticky .header-logo {
+.header.sticky {
+  position: fixed;
+}
+/*.header.sticky .header-logo {
   height: 45px;
 }
 .header.sticky .header-logo img.big-logo {
@@ -509,7 +520,7 @@ input[type="text"]:focus {
 }
 .header.sticky .header-visible {
   padding-top: 0;
-}
+}*/
 
 .header-main {
   overflow: visible;
@@ -595,7 +606,7 @@ input[type="text"]:focus {
 }
 
 .footer {
-  padding: 10px 0;
+  padding: 20px 0;
   background: #222c39;
 }
 .footer-top:after {
@@ -608,7 +619,7 @@ input[type="text"]:focus {
 }
 .footer-top .footer-nav {
   float: right;
-  padding: 15px 0 15px 10px;
+  padding: 0 0 15px 10px;
   border-bottom: 1px solid #1b1b1b;
 }
 .footer-top .footer-nav li {
@@ -630,7 +641,12 @@ input[type="text"]:focus {
   color: #7ce1c6;
 }
 .footer-bottom {
-  padding-top: 15px;
+  margin-top: -30px;
+}
+.footer-bottom:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .footer-bottom p {
   font-size: 14px;
@@ -746,8 +762,8 @@ input[type="text"]:focus {
 
 /* Pages */
 .main-travel {
-  padding: 150px 0 115px;
-  background: url(../img/bg/main_bg.jpg);
+  padding: 50px 0 115px;
+  background: url(img/bg/main_bg.jpg);
   background-attachment: fixed;
   background-size: 100% 100%;
 }
@@ -912,12 +928,12 @@ input[type="text"]:focus {
 .travel-head-centred {
   width: 100%;
   position: absolute;
-  top: 35%;
+  top: 25%;
   left: 0;
   text-align: center;
 }
 .travel-head-centred-inner {
-  width: 560px;
+  /* width: 560px; */
   margin: auto;
 }
 .travel-head-centred h1 {
@@ -991,16 +1007,59 @@ input[type="text"]:focus {
 .travel-waitfor-inner {
   text-align: center;
   width: 730px;
-  margin: 0 auto 50px;
+  margin: auto;
 }
 .travel-waitfor-inner p {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 1.2;
 }
-.travel-waitfor-inner h4 {
-  margin: 50px 0 25px;
+
+.travel-waitfor-date  {
+  margin-top: 130px;
+  border: 5px solid #88f7bb;
+  padding: 50px 0 45px;
+  position: relative;
 }
+.travel-waitfor-date .date-icon {
+  position: absolute;
+  top: -90px;
+  left: 50%;
+  margin-left: -59px;
+}
+.travel-waitfor-date h4 {
+  position: absolute;
+  top: -13px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.travel-waitfor-date h4 span {
+  display: inline-block;
+  background: #ffffff;
+  padding: 0 15px;
+}
+.travel-waitfor-date p {
+  font-size: 21px;
+}
+
+.travel-waitfor-info {
+  width: 420px;
+  margin: auto;
+  margin-top: 25px;
+}
+.travel-waitfor-info img {
+  float: left;
+}
+.travel-waitfor-info p {
+  padding-left: 60px;
+  font-size: 18px;
+  font-style: italic;
+  color: #bab7b7;
+  text-align: left;
+}
+
+
 .travel-waitfor-advert {
   background: #ededed;
   text-align: left;
@@ -1035,7 +1094,7 @@ input[type="text"]:focus {
 .travel-activity {
   display: block;
   background-color: none;
-  background-image: url(../img/bg/activity_bg.jpg);
+  background-image: url(img/bg/activity_bg.jpg);
   background-position: center;
   background-attachment: fixed;
   padding: 45px 0;
@@ -1077,6 +1136,13 @@ input[type="text"]:focus {
 .travel-activity-item:nth-child(3n+3) {
   margin-right: 0;
 }
+.travel-activity-item.activity-new {
+  width: 434px;
+  margin-right: 46px;
+}
+.travel-activity-item.activity-new:nth-child(2n+2) {
+  margin-right: 0;
+}
 .travel-activity-item .image-holder {
   float: left;
 }
@@ -1084,9 +1150,16 @@ input[type="text"]:focus {
   width: 82px;
   height: 82px;
 }
+.travel-activity-item.activity-new .image-holder img {
+  width: 132px;
+  height: 132px;
+}
 .travel-activity-item .text-holder {
   float: right;
   width: 150px;
+}
+.travel-activity-item.activity-new .text-holder {
+  width: 250px;
 }
 .travel-activity-item .text-holder h5 {
   text-align: left;
@@ -1095,11 +1168,18 @@ input[type="text"]:focus {
   line-height: 1.2;
   margin-bottom: 5px;
 }
+.travel-activity-item.activity-new .text-holder h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
 .travel-activity-item .text-holder p {
   font-size: 15px;
   font-weight: 300;
   color: #646464;
   line-height: 1.2;
+}
+.travel-activity-item.activity-new .text-holder p {
+  font-size: 16px;
 }
 .travel-activity-item.green-light {
   border-color: rgba(23, 203, 95, 0.8);
@@ -1132,7 +1212,7 @@ input[type="text"]:focus {
 .travel-result {
   display: block;
   background-color: none;
-  background-image: url(../img/bg/result_bg.jpg);
+  background-image: url(img/bg/result_bg.jpg);
   background-position: center;
   background-attachment: none;
   padding: 35px 0 60px;
@@ -1268,7 +1348,7 @@ input[type="text"]:focus {
 .travel-firstinvite {
   display: block;
   background-color: none;
-  background-image: url(../img/bg/firstinvite_bg.jpg);
+  background-image: url(img/bg/firstinvite_bg.jpg);
   background-position: center;
   background-attachment: none;
 }
@@ -1278,7 +1358,7 @@ input[type="text"]:focus {
 }
 .travel-firstinvite .container:before {
   content: '';
-  background: url(../img/monk.png);
+  background: url(img/monk.png);
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
@@ -1302,7 +1382,7 @@ input[type="text"]:focus {
 }
 .travel-firstinvite-inner p {
   font-size: 17px;
-  color: #4b4b4b;
+  color: #8d8d8d;
   line-height: 1.2;
   margin-bottom: 35px;
 }
@@ -1322,9 +1402,10 @@ input[type="text"]:focus {
   background: #ededed;
   font-weight: 500;
   padding: 22px 0;
+  margin: 40px 0 0;
 }
 .travel-route-days .day {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 .travel-route-days .day:after {
   content: "";
@@ -1349,10 +1430,23 @@ input[type="text"]:focus {
   line-height: 1.3;
   margin-bottom: 20px;
 }
+.travel-route-days .day .image-holder img {
+  max-width: 960px;
+}
+.travel-route-days .day.day1 {
+  margin-top: 110px;
+}
 .travel-route-days .day.day1 .text-holder {
   float: left;
   width: 360px;
   margin-right: 40px;
+}
+.travel-route-days .day.day1 h4 {
+  text-align: left;
+}
+.travel-route-days .day.day1 h4 .name-inner img {
+  left: 100%;
+  margin-left: 20px;
 }
 .travel-route-days .day.day1 .text-holder h4 {
   text-align: left;
@@ -1363,10 +1457,11 @@ input[type="text"]:focus {
 }
 .travel-route-days .day.day1 .image-holder img {
   width: 100%;
+  height: 220px;
   margin-bottom: 10px;
 }
 .travel-route-days .day.day2 {
-  margin-top: 60px;
+  margin-top: 90px;
 }
 .travel-route-days .day.day2 h4 {
   text-align: right;
@@ -1385,8 +1480,25 @@ input[type="text"]:focus {
   width: 610px;
   float: left;
 }
+.travel-route-days .day.day2 .image-holder:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.travel-route-days .day.day2 .image-holder .left,
+.travel-route-days .day.day2 .image-holder .right {
+  width: 300px;
+  overflow: hidden;
+}
+.travel-route-days .day.day2 .image-holder .left {
+  float: left;
+}
+.travel-route-days .day.day2 .image-holder .right {
+  float: right;
+}
 .travel-route-days .day.day2 .image-holder img {
-  margin-right: 8px;
+  min-width: 300px;
+  max-height: 325px;
 }
 .travel-route-days .day.day3 {
   margin-top: 90px;
@@ -1406,6 +1518,7 @@ input[type="text"]:focus {
 }
 .travel-route-days .day.day3 .image-holder img {
   width: 100%;
+  height: 325px;
 }
 .travel-route-days .day.day4 h4 {
   text-align: right;
@@ -1421,16 +1534,20 @@ input[type="text"]:focus {
 }
 .travel-route-days .day.day4 .image-holder img {
   width: 300px;
-  margin-right: 26px;
+  height: 300px;
+  margin-right: 24px;
 }
 .travel-route-days .day.day4 .image-holder img:last-child {
   margin-right: 0;
+}
+.travel-route-days .day:first-child {
+  margin-top: 40px !important;
 }
 
 .travel-secondinvite {
   display: block;
   background-color: none;
-  background-image: url(../img/bg/secondinvite_bg.jpg);
+  background-image: url(img/bg/secondinvite_bg.jpg);
   background-position: center;
   background-attachment: none;
 }
@@ -1440,7 +1557,7 @@ input[type="text"]:focus {
 }
 .travel-secondinvite .container:before {
   content: '';
-  background: url(../img/map.png);
+  background: url(img/map.png);
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
@@ -1578,7 +1695,7 @@ input[type="text"]:focus {
 .travel-map {
   display: block;
   background-color: none;
-  background-image: url(../img/bg/map_bg.png);
+  background-image: url(img/bg/map_bg.png);
   background-repeat: repeat;
   background-position: center;
   background-attachment: none;
@@ -1706,7 +1823,7 @@ input[type="text"]:focus {
 .travel-author {
   display: block;
   background-color: none;
-  background-image: url(../img/bg/author_bg.jpg);
+  background-image: url(img/bg/author_bg.jpg);
   background-position: center;
   background-attachment: none;
   padding: 45px 0 55px;
@@ -1882,7 +1999,7 @@ input[type="text"]:focus {
 .travel-bottom {
   display: block;
   background-color: none;
-  background-image: url(../img/bg/bottom_bg.jpg);
+  background-image: url(img/bg/bottom_bg.jpg);
   background-position: center;
   background-attachment: none;
 }
@@ -1977,6 +2094,26 @@ input[type="text"]:focus {
   margin-top: -48px;
 }
 
+.travel-pay {
+  margin: 20px 0;
+}
+.travel-pay-inner {
+  text-align: center;
+}
+.travel-pay-inner img {
+  margin-bottom: -3px;
+}
+.travel-pay-inner p {
+  margin-left: 30px;
+  display: inline-block;
+  width: 255px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #8d8d8d;
+  text-align: left;
+  line-height: 1.3;
+}
+
 .travel-form {
   display: block;
   padding: 55px 0 30px;
@@ -1988,7 +2125,7 @@ input[type="text"]:focus {
   width: 580px;
   margin: auto;
   padding: 25px 80px 15px 25px;
-  background: url(../img/plain.png) no-repeat top left, #ffffff;
+  background: url(img/plain.png) no-repeat top left, #ffffff;
   position: relative;
 }
 .travel-form-inner:after {
@@ -1998,7 +2135,7 @@ input[type="text"]:focus {
   position: absolute;
   top: 0;
   left: 100%;
-  background: url(../img/form_after.png) repeat-y;
+  background: url(img/form_after.png) repeat-y;
 }
 .travel-form-inner p {
   font-size: 15px;
@@ -2113,7 +2250,7 @@ input[type="text"]:focus {
   top: -3px;
   width: 29px;
   height: 29px;
-  background: url(../img/icons/question.png) no-repeat;
+  background: url(img/icons/question.png) no-repeat;
 }
 .travel-questions-inner .answer {
   width: 305px;
