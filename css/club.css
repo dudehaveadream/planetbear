@@ -128,6 +128,91 @@ h2.title {
   padding: 18px 25px;
   box-shadow: 0 0 0 5px rgba(0,0,0,.1);
 }
+.club-top .container {
+  position: absolute;
+  top: 50%; left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+.travel-gallery .container {
+  position: absolute;
+  top: 50%; left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.page1 {
+  background-image: url(../img/bg/club_bg.jpg);
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+
+.club-top {
+  text-align: center;
+}
+.club-top .logo-holder {
+  margin-bottom: 55px;
+}
+.club-top h1 {
+  font-size: 48px;
+  margin-bottom: 35px;
+  letter-spacing: 10px;
+  line-height: 1.1;
+}
+.club-top-who:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.club-top-who p {
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+.club-top-who-item {
+  width: 33%;
+  float: left;
+  position: relative;
+}
+.club-top-who-item h5 {
+  position: absolute;
+  left: 0;
+  top: 18px;
+  width: 100%;
+  font-size: 17px;
+  color: #7fe9c2;
+}
+.club-top-who-item.second h5 {
+  padding-left: 22px;
+}
+.club-top-who-item.third h5 {
+  padding-left: 48px;
+}
+.club-top-want {
+  font-size: 20px;
+  font-weight: 500;
+  color: #4e432f;
+  margin-top: 40px;
+  line-height: 1.2;
+}
+.club-top-want-inner {
+  display: inline-block;
+  background: rgba(0,0,0,.1);
+  padding: 4px 6px;
+}
+.club-top .btn-holder {
+  position: relative;
+  margin-top: 30px;
+}
+.club-top .btn-holder img {
+  position: absolute;
+  left: 140px;
+  bottom: -40px;
+}
 
 .travel-gallery .btn-holder {
   position: relative;
@@ -148,6 +233,13 @@ h2.title {
   -ms-background-size: cover;
   background-size: cover;
   padding: 45px 0;
+}
+.travel-members .container {
+  position: absolute;
+  top: 50%; left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 .travel-members .title {
   margin-bottom: 65px;
@@ -233,6 +325,14 @@ h2.title {
   padding-top: 55px;
   text-align: center;
 }
+.travel-mission-container {
+  position: absolute;
+  top: 50%; left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin-top: -100px;
+}
 .travel-mission .title {
   margin-bottom: 20px;
 }
@@ -309,27 +409,186 @@ h2.title {
 }
 
 
+.questionnaire {
+  max-width: 700px;
+  background: #ededed;
+  padding: 10px;
+}
+.questionnaire h1.title {
+  font-size: 43px;
+  letter-spacing: 4px;
+  line-height: 1.2;
+}
+.questionnaire h1.title span {
+  display: block;
+  color: #18debb;
+}
+.questionnaire .steps-item {
+  display: inline-block;
+  text-align: left;
+  padding: 20px 25px;
+}
+.questionnaire .steps-item h5 {
+  text-align: left;
+  font-size: 20px;
+  color: #c2c2c2;
+  line-height: 1.1;
+  margin: 0;
+}
+.questionnaire .steps-item.active h5 {
+  color: #000000;
+}
+.questionnaire .steps-item.active {
+  background: #ffffff;
+}
+.questionnaire .steps-item.active h5 span {
+  color: #18debb;
+}
 
+.questionnaire .steps-content {
+  background: #ffffff;
+  padding: 20px 25px;
+}
+.questionnaire .steps-content p.message {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+.questionnaire .steps-content p.message.error {
+  color: #ff0000;
+}
 
+.questionnaire .checkboxes {
+  padding-bottom: 20px;
+}
+.questionnaire .checkboxes:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.questionnaire .checkboxes .left {
+  float: left;
+  width: 50%;
+}
+.questionnaire .checkboxes .right {
+  float: right;
+  width: 50%;
+}
+.questionnaire .checkboxes .check-holder {
+  margin-bottom: 12px;
+}
+.check-holder input[type=checkbox] {
+    display: none;
+}
+.check-holder input[type=checkbox] + label {
+    font-size: 17px;
+    color: #363636;
+    cursor: pointer;
+}
+.check-holder input[type=checkbox] +label::before {
+    content: "";
+    display: inline-block;
+    height: 21px;
+    width: 21px;
+    margin-right: 8px;
+    margin-bottom: -5px;
+    background: url(../img/icons/checkbox.png) no-repeat;
+}
+.check-holder input[type=checkbox]:checked +label::before {
+    background-position: 0 -21px;
+}
 
+.questionnaire .steps-bottom {
+  padding-top: 15px;
+  border-top: 1px solid #e7e7e7;
+}
+.questionnaire .steps-bottom:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.questionnaire .steps-bottom .edit {
+  float: left;
+}
+.questionnaire .steps-bottom .edit a {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  position: relative;
+  text-decoration: underline;
+}
+.questionnaire .steps-bottom .edit a:hover {
+  text-decoration: none;
+}
+.questionnaire .steps-bottom .edit a img {
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+.questionnaire .steps-bottom .edit a.checkall {
+  color: #18debb;
+}
+.questionnaire .steps-bottom .edit a.cancel {
+  color: #c2c2c2;
+}
+.questionnaire .steps-bottom .btn-holder {
+  float: right;
+  margin: 0;
+}
+.questionnaire .steps-bottom .btn-holder .btn-green {
+  box-shadow: none;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+.questionnaire .steps-form-bottom {
+  text-align: center;
+}
+.questionnaire .steps-form-bottom .btn-holder {
+  float: none;
+}
 
+.questionnaire form {
+  padding-bottom: 20px;
+}
+.questionnaire .input-holder {
+  margin-bottom: 15px;
+}
+.questionnaire .input-holder label {
+  width: 170px;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 10px;
+}
+.questionnaire .input-holder input[type="text"] {
+  width: 275px;
+  height: 35px;
+  border-radius: 3px;
+}
+.questionnaire .input-holder input[type="text"]:hover {
+  border-color: #cccccc;
+}
+.questionnaire .input-holder input[type="text"]:focus {
+  box-shadow: none;
+  border-color: #cccccc;
+}
+.questionnaire .input-holder textarea {
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  height: 80px;
+  width: 275px;
+  resize: none;
+  outline: none;
+  padding: 5px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.questionnaire p.fill {
+  font-size: 17px;
+  color: #c2c2c2;
+}
+.questionnaire p.fill span {
+  color: #18debb;
+}
 
 
 
